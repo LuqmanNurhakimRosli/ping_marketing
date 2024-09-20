@@ -6,107 +6,349 @@ body {
     box-sizing: border-box;
     color: #1a1a1a; /* Dark Text */
     background-color: #f4f4f4; /* Light Background */
+  }
+
+  html {
+    scroll-behavior: smooth;
 }
 
-.navbar {
-    background-color: transparent; /* Transparent background */
+  
+  .navbar {
     padding: 25px;
-}
-
-.navbar-brand img {
-    max-width: 100px; /* Adjust logo size */
-}
-
-.nav-link {
-    color: #53b848 !important; /* Green Links */
-}
-
-.navbar-toggler {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Increase z-index */
+  }
+  
+  .navbar-toggler {
     border-color: #53b848;
-}
-
-.navbar-toggler-icon {
+  }
+  
+  .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%2859,184,72,1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-
-.section {
-    padding: 50px 0;
-    color: #1a1a1a; /* Black Text */
-}
-
-.section 
-
-.section h2 {
-    text-align: center;
-    font-size: 32px;
-    color: #53b848; /* Green Headers */
-}
-
-.btn {
-    background-color: #53b848; /* Green Button */
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-.btn:hover {
-    background-color: #46963b; /* Slightly darker green on hover */
-}
-
-/* Footer Styles */
-#footer {
-    background-color: #333; /* Dark background */
-    color: #fff; /* White text */
-    padding: 20px;
-    text-align: center;
   }
   
-  #footer .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  .navbar-nav .nav-link {
+    color: #53b848;
   }
   
-  #footer h2 {
-    margin-bottom: 10px;
+  .section {
+    padding: 30px 0;
   }
-  
-  #footer p {
-    margin: 0;
-  }
-  
-  .social-icons {
-    list-style: none;
+  /* *************************************************************8 */
+  /* About Styles */
+  #about .image-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px 0; /* Adjust padding as needed */
   }
   
-  .social-icons li {
-    margin: 0 5px;
+  #about .image img { /* Missing closing curly brace fixed here */
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
   }
   
-  .social-icons a {
-    color: #fff;
+  /* *************************************************************8 */
+  /* Glance Styles */
+  #glance {
+    background-color: rgb(145, 185, 49);
+    padding: 50px 0;
+  }
+
+  .glance-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .glance-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.glance-item h3 {
+    margin-top: 6px;
+    color: #333;
+}
+  
+.glance-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.glance-item p {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.glance-item ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.glance-item ul li {
+    margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .glance-item {
+        width: 100%;
+    }
+}
+
+  /* *************************************************************8 */
+  /* Structure Section Styles */
+#structure {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.structure-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.structure-header h1 {
+    font-size: 36px;
+    color: #d22929; /* DNEX color */
+}
+
+.structure-header p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Structure Columns */
+.structure-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.structure-column {
+    width: 30%;
+    text-align: center;
+}
+
+.structure-column h2 {
+    color: #0070c0; /* Use different colors for columns */
+    margin-bottom: 20px;
+}
+
+/* Branches */
+.branch {
+    padding: 10px 0;
+}
+
+.sub-branch {
+    padding-left: 20px;
+}
+
+/* Nodes */
+.node {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.node p {
+    font-weight: bold;
     font-size: 18px;
+    margin: 0;
+}
+
+.node span {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .structure-column {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+  
+  /* *************************************************************8 */
+  /* Board Styles */
+  #board {
+    background-color: rgb(3, 110, 110);
+  }
+
+  /* *************************************************************8 */
+  /* Global Styles */
+  #global {
+    background-color: rgb(192, 128, 10);
+  }
+
+  /* *************************************************************8 */
+  /* Snapshot Styles */
+  #snapshot {
+    background-color: rgb(238, 62, 200);
+  }
+
+  /* *************************************************************8 */
+ /* PEML Styles */
+  #peml {
+    background-color: rgb(170, 72, 235);
+  }
+
+  /* *************************************************************8 */
+/* Leadership Section Styles */
+#leadership {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.leader-row {
+    display: flex;
+    justify-content: space-between; /* Adds space between columns */
+    flex-wrap: wrap; /* Ensures the layout wraps on smaller screens */
+}
+
+.leader-card {
+    background-color: #fff;
+    border: 2px solid #4caf50;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    width: 32%; /* Each card will take up approximately 32% of the container's width */
+    margin-bottom: 20px; /* Adds space between rows */
+    transition: all 0.3s ease;
+}
+
+.leader-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.leader-img img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.leader-info h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px 0 5px;
+}
+
+.leader-info p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.leader-icons {
+    margin: 10px 0;
+}
+
+.leader-icons img {
+    margin: 0 10px;
+    width: 50px; /* Adjust the size as needed */
+}
+
+/* Responsive Design for Mobile Screens */
+@media (max-width: 768px) {
+    .leader-row {
+        flex-direction: column; /* Stacks the cards on top of each other on mobile */
+    }
+
+    .leader-card {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+  /* *************************************************************8 */
+  /* Register Styles */
+  #register {
+    background-color: rgb(242, 245, 55);
+  }
+
+  /* *************************************************************8 */
+  /* Portfolio Styles */
+  #portfolio {
+    background-color: lightcyan;
   }
 
 
-/* Responsive adjustments */
-@media (max-width: 991.98px) {
+
+
+  
+  /* *************************************************************8 */
+  /* Footer Styles */
+  #footer {
+    background-color: #e44848;
+    color: #ffffff;
+    padding: 40px 0;
+  }
+  
+  #footer .col-md-6 {
+    margin-bottom: 20px;
+  }
+  
+  #footer h3 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  #footer p, #footer a {
+    color: #ffffff;
+  }
+  
+  #footer .social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  #footer .social-icons li a {
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  #footer .social-icons li a:hover {
+    color: #53b848;
+  }
+  
+  /* Media Queries for Mobile */
+  @media (max-width: 767.98px) {
+    .navbar-brand {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .navbar-toggler {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
     .navbar-nav {
-        text-align: center;
-        margin-top: 15px;
+      text-align: center;
     }
-}
-
-@media (max-width: 767.98px) {
-    .navbar-nav .nav-item {
-        margin-bottom: 15px;
+  
+    /* Mobile adjustment for the text box */
+    #about .text-container {
+      width: 100%; /* Full width on mobile */
+      left: 0;
+      padding: 20px;
+      border-radius: 0; /* Remove rounded corners for full-width box */
     }
-
-    .navbar-brand img {
-        max-width: 80px;
-    }
-}
+  }
