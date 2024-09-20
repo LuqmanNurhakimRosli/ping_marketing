@@ -12,17 +12,16 @@
     <link href="css/mark.css" rel="stylesheet">
     
     <!-- Bootstrap CSS -->
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-<!-- jQuery and Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg ">
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
     <div class="container">
         <a class="navbar-brand" href="index.php">
             <img src="images/ping marketing.png" width="100" height="60" alt="logo" class="img-responsive">
@@ -34,42 +33,164 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
                 <li class="nav-item dropdown active">
-                    <a class="nav-link dropdown-toggle" href="about_us.php" id="navbarDropdown" role="button" data-toggle="dropdown">About Us</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="about_ping_mark.php">Ping Marketing</a></li>
-                        <li><a class="dropdown-item" href="about_history.php">History</a></li>
-                        <li><a class="dropdown-item" href="about_vision.php">Vision, Mission, Values</a></li>
-                        <li><a class="dropdown-item" href="about_corporate.php">Corporate Overview</a></li>
-                    </ul>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">About Us</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="about_ping_mark.php">Ping Marketing</a>
+                        <a class="dropdown-item" href="about_history.php">History</a>
+                        <a class="dropdown-item" href="about_vision.php">Vision, Mission, Values</a>
+                        <a class="dropdown-item" href="about_corporate.php">Corporate Overview</a>
+                    </div>
                 </li>
                 <li class="nav-item"><a class="nav-link" href="team.php">Our Leaders</a></li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="assets.php" id="navbarDropdownAssets" role="button" data-toggle="dropdown">Assets</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="assets_anasuria.php">Anasuria</a></li>
-                        <li><a class="dropdown-item" href="assets_avalon.php">Avalon</a></li>
-                        <li><a class="dropdown-item" href="assets_cookwest.php">Cook West</a></li>
-                    </ul>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAssets" role="button" data-toggle="dropdown">Assets</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="assets_anasuria.php">Anasuria</a>
+                        <a class="dropdown-item" href="assets_avalon.php">Avalon</a>
+                        <a class="dropdown-item" href="assets_cookwest.php">Cook West</a>
+                    </div>
                 </li>
                 <li class="nav-item"><a class="nav-link" href="media.php">Media</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact_general.php">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
             </ul>
         </div>
     </div>
 </nav>
 
-
 <!-- About Us Section -->
-<section id="about" class="section">
-    <div class="container">
-        <h2>About Ping Petroleum</h2>
-        <p>Efficient. Effective. Excellent. Ping Petroleum is an independent upstream oil and gas company focused on delivering innovative solutionsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss...</p>
-        <a href="about_ping.php" class="btn">Learn More</a>
+<section id="about" class="section">    
+    <div class="container">        
+        <!-- Image Section -->
+        <div class="image">            
+            <img src="images/marketing_bg.jpg" alt="About Ping Petroleum" width="900" height="500">        
+        </div>        
+        <br>        
+        <!-- Content Section -->
+        <h2>About Ping Petroleum</h2>        
+        <p>Efficient. Effective. Excellent. Ping Petroleum is an independent upstream oil and gas company focused on delivering innovative solutions...</p>        
+        <a href="#" class="btn">Learn More</a>    
     </div>
 </section>
 
-<!-- Products Section -->
-<section id="products" class="section bg-light">
+
+
+
+<!-- Glance Section -->
+<section id="glance" class="section">
+    <div class="container">
+        <div class="glance-grid">
+            <div class="glance-item">
+                <h3>Semiconductor</h3>
+                <img src="images/image1.jpg" alt="Semiconductor" class="glance-image">
+                <p>32.54% of DNEX Revenue<br>*18 months FYE 31 Dec 2023</p>
+                <ul>
+                    <li>Upstream and downstream operation with operating oil asset in North Sea, UK.</li>
+                    <li>Recently awarded 3 new oil assets from PETRONAS.</li>
+                    <li>CAPEX Plan of more than USD500mil in the next 4 years.</li>
+                    <li>Known as a lean producer with average production at circa USD24 per barrel.</li>
+                </ul>
+            </div>
+            <div class="glance-item">
+                <h3>Energy</h3>
+                <img src="images/image2.jpg" alt="Technology" class="glance-image">
+                <p>Technology - 45% of DNEX Revenue</p>
+                <ul>
+                    <li>Leading technology solutions provider in Malaysia.</li>
+                    <li>Expanding presence across the ASEAN region.</li>
+                    <li>Focus on digital transformation and cybersecurity.</li>
+                </ul>
+            </div>
+            <div class="glance-item">
+                <h3>IT</h3>
+                <img src="images/image3.jpg" alt="Renewables" class="glance-image">
+                <p>Renewables - 22.46% of DNEX Revenue</p>
+                <ul>
+                    <li>Investing in green energy solutions.</li>
+                    <li>Focus on solar energy and sustainable projects.</li>
+                    <li>Expected growth in renewable assets by 2030.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Structure Section -->
+<section id="structure" class="section">
+    <div class="container">
+        <div class="structure-header">
+            <h1>DNEX</h1>
+            <p>Dagang NeXchange Berhad</p>
+        </div>
+
+        <div class="structure-grid">
+            <!-- Technology Column -->
+            <div class="structure-column">
+                <h2>Technology</h2>
+                <div class="branch">
+                    <div class="node">
+                        <p>100.00%</p>
+                        <span>DNEX SEMICONDUCTOR SDN BHD</span>
+                    </div>
+                    <div class="sub-branch">
+                        <div class="node">
+                            <p>61.83%</p>
+                            <span>SILTERRA MALAYSIA SDN BHD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Energy Column -->
+            <div class="structure-column">
+                <h2>Energy</h2>
+                <div class="branch">
+                    <div class="node">
+                        <p>100.00%</p>
+                        <span>OGPC SDN BHD</span>
+                    </div>
+                    <div class="node">
+                        <p>100.00%</p>
+                        <span>DNEX ENERGY SDN BHD</span>
+                    </div>
+                    <div class="sub-branch">
+                        <div class="node">
+                            <p>100.00%</p>
+                            <span>Ping Petroleum UK PLC</span>
+                        </div>
+                        <div class="node">
+                            <p>100.00%</p>
+                            <span>Ping Petroleum SDN BHD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- IT Column -->
+            <div class="structure-column">
+                <h2>IT</h2>
+                <div class="branch">
+                    <div class="node">
+                        <p>100.00%</p>
+                        <span>DAGANG NEXTECHNOLOGIES SDN BHD</span>
+                    </div>
+                    <div class="node">
+                        <p>100.00%</p>
+                        <span>DNEX SOLUTIONS SDN BHD</span>
+                    </div>
+                    <div class="node">
+                        <p>100.00%</p>
+                        <span>DAGANG NET TECHNOLOGY CO. LTD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Board Director & Kay Management section -->
+<section id="board" class="section">
     <div class="container">
         <h2>Our Products</h2>
         <div class="product-grid">
@@ -89,89 +210,212 @@
     </div>
 </section>
 
-<!-- PEML Registration Section -->
-<section id="peml" class="section">
+<!-- Global Presence section -->
+<section id="global" class="section">
     <div class="container">
-        <h2>PEML Registration</h2>
-        <form action="register.php" method="post" class="form">
-            <div class="form-group">
-                <label for="company_name">Company Name</label>
-                <input type="text" id="company_name" name="company_name" required>
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <h3>Anasuria</h3>
+                <p>An offshore platform with efficient energy extraction solutions...</p>
             </div>
-            <div class="form-group">
-                <label for="contact_person">Contact Person</label>
-                <input type="text" id="contact_person" name="contact_person" required>
+            <div class="product-item">
+                <h3>Avalon</h3>
+                <p>Avalon offers a sustainable approach to oil recovery...</p>
             </div>
-            <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" required>
+            <div class="product-item">
+                <h3>Cook West</h3>
+                <p>Cook West enhances production through advanced drilling techniques...</p>
             </div>
-            <button type="submit" class="btn">Register</button>
-        </form>
+        </div>
     </div>
 </section>
 
+<!-- Snapshot section -->
+<section id="snapshot" class="section">
+    <div class="container">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <h3>Anasuria</h3>
+                <p>An offshore platform with efficient energy extraction solutions...</p>
+            </div>
+            <div class="product-item">
+                <h3>Avalon</h3>
+                <p>Avalon offers a sustainable approach to oil recovery...</p>
+            </div>
+            <div class="product-item">
+                <h3>Cook West</h3>
+                <p>Cook West enhances production through advanced drilling techniques...</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PEML section -->
+<section id="peml" class="section">
+    <div class="container">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <h3>Anasuria</h3>
+                <p>An offshore platform with efficient energy extraction solutions...</p>
+            </div>
+            <div class="product-item">
+                <h3>Avalon</h3>
+                <p>Avalon offers a sustainable approach to oil recovery...</p>
+            </div>
+            <div class="product-item">
+                <h3>Cook West</h3>
+                <p>Cook West enhances production through advanced drilling techniques...</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Leadership Team section -->
+<section id="leadership" class="section">
+    <div class="container">
+        <div class="leader-row">
+            <!-- Leader 1 -->
+            <div class="leader-card">
+                <div class="leader-img">
+                    <img src="images/leader1.jpg" alt="Leader 1" class="img-fluid">
+                </div>
+                <div class="leader-info">
+                    <h4>Tan Sri Dato' Sri Haji Syed Zainal Abidin Syed Mohamed Tahir Jamalullail</h4>
+                    <p>Chairman</p>
+                    <div class="leader-icons">
+                        <img src="images/icon1.png" alt="Icon 1">
+                        <img src="images/icon2.png" alt="Icon 2">
+                        <img src="images/icon3.png" alt="Icon 3">
+                    </div>
+                    <p>More than 25 years of leadership experience in energy and automotive industry</p>
+                </div>
+            </div>
+
+            <!-- Leader 2 -->
+            <div class="leader-card">
+                <div class="leader-img">
+                    <img src="images/leader2.jpg" alt="Leader 2" class="img-fluid">
+                </div>
+                <div class="leader-info">
+                    <h4>Muhammad Saifullah Mohd Isa</h4>
+                    <p>Director</p>
+                    <div class="leader-icons">
+                        <img src="images/maybank.png" alt="Maybank">
+                        <img src="images/ambank.png" alt="AmBank">
+                        <img src="images/midfinvest.png" alt="MIDF Investment">
+                    </div>
+                    <p>More than 13 years of experience in financial industry and capital markets</p>
+                </div>
+            </div>
+
+            <!-- Leader 3 -->
+            <div class="leader-card">
+                <div class="leader-img">
+                    <img src="images/leader3.jpg" alt="Leader 3" class="img-fluid">
+                </div>
+                <div class="leader-info">
+                    <h4>Mohamad Anuar Ebrahim</h4>
+                    <p>Director / CEO</p>
+                    <div class="leader-icons">
+                        <img src="images/petronas.png" alt="Petronas">
+                    </div>
+                    <p>More than 30 years of energy trading experience with one of the region's foremost oil producers</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Company Registration section -->
+<section id="register" class="section">
+    <div class="container">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <h3>Anasuria</h3>
+                <p>An offshore platform with efficient energy extraction solutions...</p>
+            </div>
+            <div class="product-item">
+                <h3>Avalon</h3>
+                <p>Avalon offers a sustainable approach to oil recovery...</p>
+            </div>
+            <div class="product-item">
+                <h3>Cook West</h3>
+                <p>Cook West enhances production through advanced drilling techniques...</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Portfolio section -->
+<section id="portfolio" class="section">
+    <div class="container">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <h3>Anasuria</h3>
+                <p>An offshore platform with efficient energy extraction solutions...</p>
+            </div>
+            <div class="product-item">
+                <h3>Avalon</h3>
+                <p>Avalon offers a sustainable approach to oil recovery...</p>
+            </div>
+            <div class="product-item">
+                <h3>Cook West</h3>
+                <p>Cook West enhances production through advanced drilling techniques...</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 <!-- Footer -->
-<footer id="footer" class="midnight-blue">
+<footer id="footer">
     <div class="container">
         <div class="row">
+            <!-- Office 1 -->
             <div class="col-md-6 col-lg-3">
-                <h2 class="text-white"><strong>Aberdeen Office</strong></h2>
+                <h3 class="text-white"><strong>Aberdeen Office</strong></h3>
                 <p><i class="fa fa-map-marker"></i> Ping Petroleum UK Plc,<br />H1 Hill of Rubislaw, <br />Anderson Drive, Aberdeen</p>
                 <p><i class="fa fa-phone"></i> +44 (0) 1224 047 954</p>
             </div>
-
+            <!-- Office 2 -->
             <div class="col-md-6 col-lg-3">
-                <h2 class="text-white"><strong>Malaysia Office</strong></h2>
+                <h3 class="text-white"><strong>Malaysia Office</strong></h3>
                 <p><i class="fa fa-map-marker"></i> Ping Petroleum Sdn Bhd,<br />Office Suite 18-02, Level 18,<br />Ilham Tower, No.8 Jalan Binjai<br>50450 Kuala Lumpur</p>
                 <p><i class="fa fa-phone"></i> +603 4816 8238<br/></p>
             </div>
-
+            <!-- Assets -->
             <div class="col-md-6 col-lg-3">
-                <h2 class="text-white"><strong>Assets</strong></h2>
+                <h3 class="text-white"><strong>Assets</strong></h3>
                 <p><a href="assets_anasuria.php" class="text-white">Anasuria</a></p>
                 <p><a href="assets_avalon.php" class="text-white">Avalon</a></p>
                 <p><a href="assets_cookwest.php" class="text-white">Cook West</a></p>
             </div>
-
+            <!-- About Us -->
             <div class="col-md-6 col-lg-3">
-                <h2 class="text-white"><strong>About Us</strong></h2>
+                <h3 class="text-white"><strong>About Us</strong></h3>
                 <p><a href="about_history.php" class="text-white">History</a></p>
-                <p><a href="about_vision.php" class="text-white">Mission and Value</a></p>
+                <p><a href="about_vision.php" class="text-white">Mission and Values</a></p>
                 <ul class="social-icons">
-                    <li><a href="https://www.facebook.com/PingPetroleum" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                    <li><a href="https://www.linkedin.com/company/ping-petroleum" target="blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.facebook.com/PingPetroleum" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/ping-petroleum" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
         </div>
         <br />
-        <center>&copy; 2019 Ping Petroleum. All Rights Reserved.</center>
+        <center>&copy; 2023 Ping Petroleum. All Rights Reserved.</center>
     </div>
 </footer>
-	
-<!--auto slider-->
-<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-
-<script src="js/responsiveslides.min.js"></script>
-	<script>
-		$(function () {
-			$("#slider").responsiveSlides({
-				auto: true,
-				nav: true,
-				speed: 300,
-				namespace: "callbacks",
-				pager: true,
-				
-			});
-		});
-	</script>
-<!--auto slider-->
-    <!--<script src="js/jquery.min.js"></script>
-    <script src="js/jquery.js"></script>-->
-	<script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.isotope.min.js"></script>
-    <script src="js/main.js"></script>
-    <!--<script src="js/wow.min.js"></script>-->
 
 </body>
 </html>
