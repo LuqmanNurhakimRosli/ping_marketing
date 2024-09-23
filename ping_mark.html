@@ -22,55 +22,63 @@
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-    <div class="container">
-        <a class="navbar-brand" href="index.php">
-            <img src="images/ping marketing.png" width="100" height="60" alt="logo" class="img-responsive">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
-                <li class="nav-item dropdown active">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">About Us</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="about_ping_mark.php">Ping Marketing</a>
-                        <a class="dropdown-item" href="about_history.php">History</a>
-                        <a class="dropdown-item" href="about_vision.php">Vision, Mission, Values</a>
-                        <a class="dropdown-item" href="about_corporate.php">Corporate Overview</a>
-                    </div>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="team.php">Our Leaders</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAssets" role="button" data-toggle="dropdown">Assets</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="assets_anasuria.php">Anasuria</a>
-                        <a class="dropdown-item" href="assets_avalon.php">Avalon</a>
-                        <a class="dropdown-item" href="assets_cookwest.php">Cook West</a>
-                    </div>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="media.php">Media</a></li>
-                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-            </ul>
-        </div>
+  <div class="container">
+    <a class="navbar-brand" href="index.php">
+      <img src="images/ico/apple-icon-114x114.png" width="60" height="60" alt="logo" class="img-responsive">
+    </a>
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">About Us</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="about_ping_mark.php">Ping Marketing</a>
+            <a class="dropdown-item" href="about_history.php">History</a>
+            <a class="dropdown-item" href="about_vision.php">Vision, Mission, Values</a>
+            <a class="dropdown-item" href="about_corporate.php">Corporate Overview</a>
+          </div>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="team.php">Our Leaders</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAssets" role="button" data-toggle="dropdown">Assets</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="assets_anasuria.php">Anasuria</a>
+            <a class="dropdown-item" href="assets_avalon.php">Avalon</a>
+            <a class="dropdown-item" href="assets_cookwest.php">Cook West</a>
+          </div>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="media.php">Media</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+      </ul>
     </div>
+  </div>
 </nav>
+
 
 <!-- About Us Section -->
 <section id="about" class="section">    
     <div class="container">        
         <!-- Image Section -->
-        <div class="image">            
-            <img src="images/marketing_bg.jpg" alt="About Ping Petroleum" width="900" height="500">        
+        <div class="image" style="position: relative;">
+            <div class="box" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(0, 0, 0, 0.5); color: white; padding: 20px; text-align: center; width: 81%;">
+                <h3>Innovating Energy Solutions</h3>
+                <p>We are committed to efficiency, effectiveness, and excellence in all we do.</p>
+            </div>            
+            <img src="images/marketing_bg.jpg" alt="About Ping Petroleum" width="900" height="500" style="display: block;">        
         </div>        
         <br>        
         <!-- Content Section -->
-        <h2>About Ping Petroleum</h2>        
+        <!-- <h2>About Ping Petroleum</h2>        
         <p>Efficient. Effective. Excellent. Ping Petroleum is an independent upstream oil and gas company focused on delivering innovative solutions...</p>        
-        <a href="#" class="btn">Learn More</a>    
+        <a href="#" class="btn">Learn More</a>     -->
     </div>
 </section>
+
 
 
 
@@ -78,6 +86,7 @@
 <!-- Glance Section -->
 <section id="glance" class="section">
     <div class="container">
+        <h2>DneX GROUP AT THE GLANCE</h2>
         <div class="glance-grid">
             <div class="glance-item">
                 <h3>Semiconductor</h3>
@@ -118,6 +127,7 @@
 <!-- Structure Section -->
 <section id="structure" class="section">
     <div class="container">
+        <h2>DneX'S CORPORATE STRUCTURE</h2>
         <div class="structure-header">
             <h1>DNEX</h1>
             <p>Dagang NeXchange Berhad</p>
@@ -192,90 +202,179 @@
 <!-- Board Director & Kay Management section -->
 <section id="board" class="section">
     <div class="container">
-        <h2>Our Products</h2>
-        <div class="product-grid">
-            <div class="product-item">
-                <h3>Anasuria</h3>
-                <p>An offshore platform with efficient energy extraction solutions...</p>
+        <div class="row justify-content-md-center">
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="images/team_color/team_6.jpg" alt="Zainal Abidin Jalil">
+                        <div class="service-overlay">
+                            <p><strong>Zainal Abidin Jalil</strong> <br />Managing Director <br /></p>
+                        </div>
+                    </div>
+                    <div class="service-text">
+                        <h3>Zainal Abidin Jalil</h3>
+                        <a class="btn" id="various6" href="#inline6" >+</a>
+                    </div>
+                </div>
             </div>
-            <div class="product-item">
-                <h3>Avalon</h3>
-                <p>Avalon offers a sustainable approach to oil recovery...</p>
-            </div>
-            <div class="product-item">
-                <h3>Cook West</h3>
-                <p>Cook West enhances production through advanced drilling techniques...</p>
+
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="images/team_color/bod-AO.jpg" alt="Azhar Othman">
+                        <div class="service-overlay">
+                            <p><strong>Azhar Othman</strong> <br />Non-Executive Director <br /></p>
+                        </div>
+                    </div>
+                    <div class="service-text">
+                        <h3>Azhar Othman</h3>
+                        <a class="btn" id="various4" href="#inline4" >+</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
+
 
 <!-- Global Presence section -->
 <section id="global" class="section">
-    <div class="container">
-        <h2>Our Products</h2>
-        <div class="product-grid">
-            <div class="product-item">
-                <h3>Anasuria</h3>
-                <p>An offshore platform with efficient energy extraction solutions...</p>
-            </div>
-            <div class="product-item">
-                <h3>Avalon</h3>
-                <p>Avalon offers a sustainable approach to oil recovery...</p>
-            </div>
-            <div class="product-item">
-                <h3>Cook West</h3>
-                <p>Cook West enhances production through advanced drilling techniques...</p>
-            </div>
+    <div class="container" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: stretch;">
+        <h2>DneX GROUP GLOBAL PRESENCE</h2>
+        <!-- Text Section (Left) -->
+        <div class="text-container" style="flex-basis: 35%; background-color: rgba(0, 0, 0, 0.7); padding: 20px; color: white; display: flex; flex-direction: column; justify-content: center;">
+            <h2>Global Presence</h2>
+            <p><strong>Stock Exchange Listing:</strong> Main Market Of Bursa Securities (Since 12 September 1993)</p>
+            <p><strong>Share Price:</strong> RM0.44 (Closing Price as at 23 July 2024)</p>
+            <p><strong>Market Capitalisation:</strong> RM1.49 billion (As at closing on 23 July 2024)</p>
+            <p><strong>No. of Employees:</strong> ~1,849</p>
+            <p><strong>Office Locations:</strong></p>
+            <ul>
+                <li>11 Malaysia</li>
+                <li>1 United Kingdom</li>
+                <li>1 China</li>
+                <li>1 Indonesia</li>
+                <li>1 Taiwan</li>
+                <li>1 Saudi Arabia</li>
+                <li>1 Kuwait</li>
+            </ul>
         </div>
+
+        <!-- Map Section (Right) -->
+        <div class="image-container" style="flex-basis: 60%; display: flex; justify-content: center; align-items: center;">
+            <img src="images/global_pesence.png" alt="Global Map Presence" style="max-width: 100%; height: auto; border-radius: 20px;">
+        </div>
+
     </div>
 </section>
+
+
+
+
 
 <!-- Snapshot section -->
 <section id="snapshot" class="section">
+    <h2>SNAPSHOT OF PING PETROLEUM LIMITED</h2>
+
     <div class="container">
-        <h2>Our Products</h2>
-        <div class="product-grid">
-            <div class="product-item">
-                <h3>Anasuria</h3>
-                <p>An offshore platform with efficient energy extraction solutions...</p>
+        
+        <!-- Container 1: Company Overview -->
+        <div class="snapshot-container">
+            <h2>Company Overview</h2>
+            <ul>
+                <li>Lean exploration and production company and a turnaround specialist</li>
+                <li><strong>Specializes in late-life O&G assets</strong></li>
+                <li>Experts in extending the life cycle of its oil and gas assets to optimize return on investment</li>
+                <li>Balanced portfolio of producing and appraisal licenses in the North Sea UK and Discovered Resource Opportunities in Malaysia</li>
+            </ul>
+            <div class="key-figures">
+                <p><strong>Key Figures:</strong></p>
+                <ul>
+                    <li><strong>4</strong> Operating</li>
+                    <li><strong>1</strong> Reactivation</li>
+                    <li><strong>9</strong> Development fields</li>
+                    <li><strong>27.1 mmboe</strong> Net 2P</li>
+                    <li><strong>124.8 mmboe</strong> Net 2P + 2C</li>
+                    <li><strong>USD 26/boe</strong> Operating CF/bbl during barrel life</li>
+                    <li><strong>USD 600m</strong> Estimated net capex</li>
+                    <li><strong>USD 9/boe</strong> Operating net cash per barrel</li>
+                    <li><strong>USD 460m</strong> NPV10</li>
+                </ul>
             </div>
-            <div class="product-item">
-                <h3>Avalon</h3>
-                <p>Avalon offers a sustainable approach to oil recovery...</p>
+        </div>
+
+        <!-- Container 2: Key Assets (Focused Portfolio) -->
+        <div class="snapshot-container">
+            <h2>Key Assets (Focused Portfolio)</h2>
+            <div class="assets">
+                <h3>United Kingdom</h3>
+                <img src="/mnt/data/image.png" alt="UK Key Assets" class="snapshot-image">
+                <h3>Malaysia</h3>
+                <img src="/mnt/data/image.png" alt="Malaysia Key Assets" class="snapshot-image">
             </div>
-            <div class="product-item">
-                <h3>Cook West</h3>
-                <p>Cook West enhances production through advanced drilling techniques...</p>
+        </div>
+
+        <!-- Container 3: Other Assets (FPSO) -->
+        <div class="snapshot-container">
+            <h2>Other Assets (FPSO)</h2>
+            <div class="assets">
+                <img src="/mnt/data/image.png" alt="FPSO 1" class="snapshot-image">
+                <p><strong>Anasuria FPSO</strong><br>
+                Infrastructure hub for Anasuria tie-backs with significant spare capacity.<br>
+                Proximal to several undeveloped discoveries and prospects.</p>
+                
+                <img src="/mnt/data/image.png" alt="FPSO 2" class="snapshot-image">
+                <p><strong>Excelsior FPSO</strong><br>
+                Design and mooring system suitable for harsh offshore environments in the North Sea, NW Shelf Australia, and others.</p>
             </div>
         </div>
     </div>
 </section>
 
+
+
 <!-- PEML section -->
 <section id="peml" class="section">
+    <h2>PING ENERGY MARKETING LIMITED (PEML)</h2>
+
     <div class="container">
-        <h2>Our Products</h2>
-        <div class="product-grid">
-            <div class="product-item">
-                <h3>Anasuria</h3>
-                <p>An offshore platform with efficient energy extraction solutions...</p>
-            </div>
-            <div class="product-item">
-                <h3>Avalon</h3>
-                <p>Avalon offers a sustainable approach to oil recovery...</p>
-            </div>
-            <div class="product-item">
-                <h3>Cook West</h3>
-                <p>Cook West enhances production through advanced drilling techniques...</p>
-            </div>
+        <!-- Container 1: Our Corporate Structure -->
+        <div class="peml-container corporate-structure">
+            <h2>Our Corporate Structure</h2>
+            <p>
+                Our corporate structure is designed to ensure a seamless and efficient workflow between all departments. We believe in a well-organized hierarchy to streamline operations and facilitate growth. Below is an overview of the key elements of our corporate structure:
+            </p>
+            <ul>
+                <li>Board of Directors</li>
+                <li>Executive Management</li>
+                <li>Operations Team</li>
+                <li>Finance and Accounting</li>
+                <li>Marketing and Sales</li>
+            </ul>
         </div>
+
+        <!-- Container 2: Explaining Our Business -->
+        <div class="peml-container explain-business">
+            <h2>Explaining Our Business</h2>
+            <p>
+                We are a leading player in the industry, specializing in delivering high-quality products and services to our clients. Our business model revolves around innovation, sustainability, and customer satisfaction. Here's what makes our business unique:
+            </p>
+            <ul>
+                <li>Innovation-driven solutions</li>
+                <li>Sustainable practices</li>
+                <li>Client-centric approach</li>
+                <li>Global reach with local expertise</li>
+            </ul>
+        </div>
+
     </div>
 </section>
+
 
 <!-- Leadership Team section -->
 <section id="leadership" class="section">
     <div class="container">
+        <h2> PEML LEADERSHIP TEAM</h2>
         <div class="leader-row">
             <!-- Leader 1 -->
             <div class="leader-card">
@@ -334,21 +433,32 @@
 
 <!-- Company Registration section -->
 <section id="register" class="section">
+    <h2>PEML COMPANY REGISTRATION</h2>
     <div class="container">
-        <h2>Our Products</h2>
-        <div class="product-grid">
-            <div class="product-item">
-                <h3>Anasuria</h3>
-                <p>An offshore platform with efficient energy extraction solutions...</p>
-            </div>
-            <div class="product-item">
-                <h3>Avalon</h3>
-                <p>Avalon offers a sustainable approach to oil recovery...</p>
-            </div>
-            <div class="product-item">
-                <h3>Cook West</h3>
-                <p>Cook West enhances production through advanced drilling techniques...</p>
-            </div>
+        <!-- Container 1: Our Corporate Structure -->
+        <div class="register-container corporate-structure">
+            <h2>Registered entity name:</h2>
+            <p>
+                PING ENERGY MARKETING LIMITED 
+            </p>
+            <h2>Incorparation Date:</h2>
+            <p>
+                26 June 2024
+            </p>
+            <h2>Registration:</h2>
+            <p>
+                LABUAN FINANCIAL SERVICES AUTHORITY (LFSA) UNDER LABUAN COMPANY ACT 1990
+            </p>
+            <h2>Principal Business:</h2>
+            <p>
+                BUSINESS OF OIL & GAS INCLUDING GENERAL COMMODITIES MARKETING AND TRADING
+            </p>
+            
+        </div>
+    
+        <!-- Container 2: Explaining Our Business -->
+        <div class="register-container explain-business">
+            <img src="images/sijil_labuan.png" alt="">
         </div>
     </div>
 </section>
@@ -359,63 +469,78 @@
 <!-- Portfolio section -->
 <section id="portfolio" class="section">
     <div class="container">
-        <h2>Our Products</h2>
-        <div class="product-grid">
-            <div class="product-item">
-                <h3>Anasuria</h3>
-                <p>An offshore platform with efficient energy extraction solutions...</p>
-            </div>
-            <div class="product-item">
-                <h3>Avalon</h3>
-                <p>Avalon offers a sustainable approach to oil recovery...</p>
-            </div>
-            <div class="product-item">
-                <h3>Cook West</h3>
-                <p>Cook West enhances production through advanced drilling techniques...</p>
-            </div>
+        <h2>Product Portfolio</h2>
+        
+        <div class="portfolio-category">
+            <h3>Petroleum Products</h3>
+            <ul>
+                <li>Liquefied Petroleum Gas (LPG)</li>
+                <li>Gasoline</li>
+                <li>Diesel</li>
+                <li>Jet Fuel</li>
+                <li>Fuel Oil</li>
+                <li>Sulphur</li>
+                <li>Petroleum Coke</li>
+            </ul>
+        </div>
+
+        <div class="portfolio-category">
+            <h3>Petrochemical Products</h3>
+            <ul>
+                <li>Methanol</li>
+                <li>MTBE (Methyl Tertiary Butyl Ether)</li>
+                <li>LLDPE (Linear Low-Density Polyethylene)</li>
+                <li>LDPE (Low-Density Polyethylene)</li>
+                <li>HDPE (High-Density Polyethylene)</li>
+                <li>Ammonia</li>
+                <li>Urea</li>
+            </ul>
         </div>
     </div>
 </section>
 
 
-<!-- Footer -->
-<footer id="footer">
-    <div class="container">
-        <div class="row">
-            <!-- Office 1 -->
-            <div class="col-md-6 col-lg-3">
-                <h3 class="text-white"><strong>Aberdeen Office</strong></h3>
-                <p><i class="fa fa-map-marker"></i> Ping Petroleum UK Plc,<br />H1 Hill of Rubislaw, <br />Anderson Drive, Aberdeen</p>
-                <p><i class="fa fa-phone"></i> +44 (0) 1224 047 954</p>
-            </div>
-            <!-- Office 2 -->
-            <div class="col-md-6 col-lg-3">
-                <h3 class="text-white"><strong>Malaysia Office</strong></h3>
-                <p><i class="fa fa-map-marker"></i> Ping Petroleum Sdn Bhd,<br />Office Suite 18-02, Level 18,<br />Ilham Tower, No.8 Jalan Binjai<br>50450 Kuala Lumpur</p>
-                <p><i class="fa fa-phone"></i> +603 4816 8238<br/></p>
-            </div>
-            <!-- Assets -->
-            <div class="col-md-6 col-lg-3">
-                <h3 class="text-white"><strong>Assets</strong></h3>
-                <p><a href="assets_anasuria.php" class="text-white">Anasuria</a></p>
-                <p><a href="assets_avalon.php" class="text-white">Avalon</a></p>
-                <p><a href="assets_cookwest.php" class="text-white">Cook West</a></p>
-            </div>
-            <!-- About Us -->
-            <div class="col-md-6 col-lg-3">
-                <h3 class="text-white"><strong>About Us</strong></h3>
-                <p><a href="about_history.php" class="text-white">History</a></p>
-                <p><a href="about_vision.php" class="text-white">Mission and Values</a></p>
-                <ul class="social-icons">
-                    <li><a href="https://www.facebook.com/PingPetroleum" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                    <li><a href="https://www.linkedin.com/company/ping-petroleum" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <br />
-        <center>&copy; 2023 Ping Petroleum. All Rights Reserved.</center>
-    </div>
-</footer>
 
+<footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Investors</a></li>
+          <li><a href="#">Suppliers</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Site Information</h3>
+        <ul>
+          <li><a href="#">Cookie notices</a></li>
+          <li><a href="#">Scam and fraud alert</a></li>
+          <li><a href="#">Terms and conditions</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Other Websites</h3>
+        <ul>
+          <li><a href="#">Aramco Trading Company</a></li>
+          <li><a href="#">IKTVA</a></li>
+          <li><a href="#">Taleed</a></li>
+        </ul>
+      </div>
+      
+      
+    </div>
+    <div class="footer-copyright"></div>
+        &copy; Ping Marketing Limited 2023. All rights reserved.
+        <img src="images/about_icon1.png" alt="Aramco Logo">
+      </div>
+  </footer>
+<script>$(document).ready(function() {
+    $('.service-item a').on('click', function(e) {
+        e.preventDefault();
+        var modalId = $(this).attr('href');
+        $(modalId).modal('show');
+    });
+});</script
 </body>
 </html>
