@@ -28,48 +28,65 @@ body {
 
 /* *************************************************** */
 /* Navbar style */
-  
-  .navbar {
-    font-size: 16px;
-    padding: 25px;
-    /* position: sticky; */
-    top: 0;
-    z-index: 1000; /* Increase z-index */
-    border-bottom: 3px solid #53b848; /* Green bottom border */
+/* Navbar Styles */
+.navbar {
+  font-size: 16px;
+  padding: 25px;
+  border-bottom: 3px solid #53b848;
+  display: flex;
+  justify-content: space-between; /* Aligns logo and toggler properly */
+  align-items: center;
+}
 
+.navbar-toggler {
+  border-color: #53b848;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%2859,184,72,1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-nav .nav-link {
+  color: #000000;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 5px;
+  text-decoration: none;
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: #53b848;
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: row; /* Stacks logo and toggler horizontally */
   }
-  
+
   .navbar-toggler {
-    border-color: #53b848;
+      margin-left: auto; /* Moves toggler to the right */
   }
   
-  .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%2859,184,72,1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  .navbar-collapse {
+      text-align: center;
   }
-  
-  .navbar-nav .nav-link {
-    color: #000000; /* Black text color */
-    font-weight: bold; /* Bold text */
-    position: relative;  /* To position the ::after pseudo-element */
-    text-decoration: none;
-    padding-bottom: 5px; /* Adds some space between text and the line */
+
+  .navbar-nav {
+      flex-direction: column;
   }
-  
-  .navbar-nav .nav-link::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    left: 0;
-    bottom: 0;
-    background-color: #53b848; /* Green color for the line */
-    transition: width 0.3s ease-in-out; /* Smooth animation */
-  }
-  
-  .navbar-nav .nav-link:hover::after {
-    width: 100%; /* Expand the line when hovering */
-  }
-  
+}
 
   /* *************************************************************8 */
   /* About Styles */
