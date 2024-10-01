@@ -335,6 +335,8 @@ body {
   justify-content: space-around;
   flex-wrap: wrap; /* Allows items to wrap on smaller screens */
   padding-bottom: 80px;
+  border-bottom: 4px solid #53b848; /* Green bottom border */
+
 }
 
 .product-category {
