@@ -24,23 +24,31 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
-      <a class="navbar-brand" href="index.html">
-          <img src="images/ico/apple-icon-114x114.png" width="60" height="60" alt="logo" class="img-responsive">
-      </a>
+    <a class="navbar-brand" href="index.html">
+      <img src="images/ico/apple-icon-114x114.png" width="60" height="60" alt="logo" class="img-responsive">
+    </a>
 
-      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="aboutUs.html">About Us</a></li>
-              <li class="nav-item"><a class="nav-link" href="OurLeader.html">Our Leaders</a></li>
-              <li class="nav-item"><a class="nav-link" href="product.html">Our Products</a></li>
-              <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-          </ul>
-      </div>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
+          <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+            <a class="dropdown-item" href="mission.html">Our Mission</a>
+            <a class="dropdown-item" href="vision.html">Our Vision</a>
+            <a class="dropdown-item" href="values.html">Our Values</a>
+            <a class="dropdown-item" href="history.html">Our History</a>
+          </div>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="OurLeader.html">Our Leaders</a></li>
+        <li class="nav-item"><a class="nav-link" href="product.html">Our Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
   </div>
 </nav>
 

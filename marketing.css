@@ -27,66 +27,63 @@ body {
 }
 
 /* *************************************************** */
-/* Navbar style */
 /* Navbar Styles */
 .navbar {
-  font-size: 16px;
-  padding: 25px;
-  border-bottom: 3px solid #53b848;
+  font-size: 16px; /* Base font size */
+  padding: 15px 25px; /* Padding for the navbar */
+  border-bottom: 3px solid #53b848; /* Bottom border to match theme */
+  background-color: #f8f9fa; /* Light background color */
   display: flex;
   justify-content: space-between; /* Aligns logo and toggler properly */
-  align-items: center;
+  align-items: center; /* Center items vertically */
 }
 
 .navbar-toggler {
-  border-color: #53b848;
+  border-color: #53b848; /* Color for the toggler border */
 }
 
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%2859,184,72,1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%2859,184,72,1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Custom icon for toggler */
 }
 
 .navbar-nav .nav-link {
-  color: #000000;
-  font-weight: bold;
-  position: relative;
-  padding-bottom: 5px;
-  text-decoration: none;
+  color: #000000; /* Color of navbar links */
+  font-weight: bold; /* Bold text */
+  position: relative; /* For the after pseudo-element */
+  padding: 10px 15px; /* Padding for links */
+  text-decoration: none; /* Remove underline */
 }
 
 .navbar-nav .nav-link::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  left: 0;
-  bottom: 0;
-  background-color: #53b848;
-  transition: width 0.3s ease-in-out;
+  content: ''; /* Empty content for pseudo-element */
+  position: absolute; /* Positioning for effect */
+  width: 0; /* Initial width */
+  height: 2px; /* Height of the underline effect */
+  left: 0; /* Align to left */
+  bottom: 0; /* Align to bottom */
+  background-color: #53b848; /* Color of the underline effect */
+  transition: width 0.3s ease-in-out; /* Smooth transition for effect */
 }
 
 .navbar-nav .nav-link:hover::after {
-  width: 100%;
+  width: 100%; /* Expand underline on hover */
+}
+/* Dropdown Menu Styles */
+.dropdown-menu {
+  background-color: #f8f9fa; /* Background color for dropdown */
+  border: 1px solid #53b848; /* Border color for dropdown */
 }
 
-/* Media Query for Mobile */
-@media (max-width: 768px) {
-  .navbar {
-      flex-direction: row; /* Stacks logo and toggler horizontally */
-  }
-
-  .navbar-toggler {
-      margin-left: auto; /* Moves toggler to the right */
-  }
-  
-  .navbar-collapse {
-      text-align: center;
-  }
-
-  .navbar-nav {
-      flex-direction: column;
-  }
+.dropdown-item {
+  color: #1a1a1a; /* Text color for dropdown items */
 }
+
+.dropdown-item:hover {
+  background-color: #53b848; /* Highlight color on hover */
+  color: white; /* Text color on hover */
+}
+
+
 
   /* *************************************************************8 */
   /* About Styles */
