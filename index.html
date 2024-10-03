@@ -39,6 +39,25 @@
             });
         });
         </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                    observer.unobserve(entry.target); // Unobserve once it animates in
+                }
+            });
+        }, { threshold: 0.1 }); // 0.1 means it triggers when 10% of the element is in view
+    
+        const leaderCards = document.querySelectorAll('.leader-card');
+        leaderCards.forEach(card => {
+            observer.observe(card); // Observe each leader card
+        });
+    });
+    </script>
+    
         
         
        
@@ -51,34 +70,35 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <img src="images/ico/apple-icon-114x114.png" width="60" height="60" alt="logo" class="img-responsive">
-      </a>
-  
-      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-  
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
-            <div class="dropdown-menu" aria-labelledby="aboutDropdown">
-              <a class="dropdown-item" href="aboutUs.html">About Us</a>
-              <a class="dropdown-item" href="#">Our Vision</a>
-              <a class="dropdown-item" href="#">Our Values</a>
-              <a class="dropdown-item" href="#">Our History</a>
-            </div>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="OurLeader.html">Our Leaders</a></li>
-          <li class="nav-item"><a class="nav-link" href="product.html">Our Products</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-        </ul>
-      </div>
+        <a class="navbar-brand" href="index.html">
+            <img src="images/ico/apple-icon-114x114.png" width="60" height="60" alt="logo" class="img-responsive">
+        </a>
+
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        About Us
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                        <a class="dropdown-item" href="aboutUs_history.html">History</a>
+                        <a class="dropdown-item" href="aboutUs_mission&vission.html">Mission & Vision</a>
+                        <a class="dropdown-item" href="aboutUs_corporate.html">Corporate Overview</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="OurLeader.html">Our Leaders</a></li>
+                <li class="nav-item"><a class="nav-link" href="product.html">Our Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
     </div>
-  </nav>
-  
+</nav>
+
 
 
 <!-- About Us Section -->
@@ -101,141 +121,42 @@
 </section>
 
 
-<!-- PEML section -->
-<section id="peml" class="section">
-    <h2>PING ENERGY MARKETING LIMITED (PEML)</h2>
-
+<!-- Snapshot Section -->
+<section id="snapshot" class="section">
+    <h2>Ping Marketing At Glance</h2>
     <div class="container">
-        <!-- Container 1: Our Corporate Structure -->
-        <div class="peml-container corporate-structure">
-            <h2>Our Corporate Structure</h2>
-            <p>
-                Our corporate structure is designed to ensure a seamless and efficient workflow between all departments. We believe in a well-organized hierarchy to streamline operations and facilitate growth. Below is an overview of the key elements of our corporate structure:
-            </p>
-            <ul>
-                <li>Board of Directors</li>
-                <li>Executive Management</li>
-                <li>Operations Team</li>
-                <li>Finance and Accounting</li>
-                <li>Marketing and Sales</li>
-            </ul>
-        </div>
-
-        <!-- Container 2: Explaining Our Business -->
-        <div class="peml-container explain-business">
-            <h2>Explaining Our Business</h2>
-            <p>
-                We are a leading player in the industry, specializing in delivering high-quality products and services to our clients. Our business model revolves around innovation, sustainability, and customer satisfaction. Here's what makes our business unique:
-            </p>
-            <ul>
-                <li>Innovation-driven solutions</li>
-                <li>Sustainable practices</li>
-                <li>Client-centric approach</li>
-                <li>Global reach with local expertise</li>
-            </ul>
-        </div>
-
-    </div>
-</section>
-
-<!-- product -->
-<section>
-    <div class="header-content">
-      <h2>Ping Marketing supplies a diverse range of petroleum 
-        and petrochemical products that cater to various industries.</h2>
-      <h2>Our products include:  </h2>
-    
-    </div>
-    
-    <div class="list-product">
-            <div class="product-category">
-                <h3>Petroleum Products</h3>
-                <ul>
-                    <li>Liquefied Petroleum Gas (LPG)</li>
-                    <li>Gasoline</li>
-                    <li>Diesel</li>
-                    <li>Jet Fuel</li>
-                    <li>Fuel Oil</li>
-                    <li>Sulphur</li>
-                    <li>Petroleum Coke</li>
-                </ul>
-            </div>
-    
-            <div class="product-category">
-            <h3>Petrochemical Products</h3>
-                <ul>
-                    <li>Methanol</li>
-                    <li>MTBE (Methyl Tertiary Butyl Ether)</li>
-                    <li>LLDPE (Linear Low-Density Polyethylene)</li>
-                    <li>LDPE (Low-Density Polyethylene)</li>
-                    <li>HDPE (High-Density Polyethylene)</li>
-                    <li>Ammonia</li>
-                    <li>Urea</li>
-                </ul>
-            </div>
-    </div>
-    
-    
-  </section>
-
-
-<!-- Leadership Team section -->
-<section id="leadership" class="section">
-    <div class="container">
-        <h2> PEML LEADERSHIP TEAM</h2>
-        <br>
-        <div class="leader-row">
-            <!-- Leader 1 -->
-            <div class="leader-card">
-                <div class="leader-img">
-                    <img src="images/leaderMarketing/Picture1.jpg" alt="Leader 1" class="img-fluid">
-                </div>
-                <div class="leader-info">
-                    <h4>Tan Sri Dato' Sri Haji Syed Zainal Abidin Syed Mohamed Tahir Jamalullail</h4>
-                    <p>Chairman</p>
-                    <!-- <div class="leader-icons">
-                        <img src="images/icon1.png" alt="Icon 1">
-                        <img src="images/icon2.png" alt="Icon 2">
-                        <img src="images/icon3.png" alt="Icon 3">
-                    </div> -->
-                    <p>More than 25 years of leadership experience in energy and automotive industry</p>
-                </div>
+        <!-- Snapshot Row -->
+        <div class="snapshot-row">
+            <!-- Column 1 - About Us -->
+            <div class="snapshot-column" style="    border-bottom: 1px solid #928f8f;" >
+                <img src="images/marketing_bg.jpg" alt="About Us" class="snapshot-img">
+                <h3>About Us</h3>
+                <p>Established in 2024, Ping Energy Marketing Limited mainly focuses on the 
+                    marketing and trading.</p>
+                <a href="#" class="btn-link">History | Vision and Values</a>
             </div>
 
-            <!-- Leader 2 -->
-            <div class="leader-card">
-                <div class="leader-img">
-                    <img src="images/leaderMarketing/Picture2.jpg" alt="Leader 2" class="img-fluid">
-                </div>
-                <div class="leader-info">
-                    <h4>Muhammad Saifullah Mohd Isa</h4>
-                    <p>Director</p>
-                    <!-- <div class="leader-icons">
-                        <img src="images/maybank.png" alt="Maybank">
-                        <img src="images/ambank.png" alt="AmBank">
-                        <img src="images/midfinvest.png" alt="MIDF Investment">
-                    </div> -->
-                    <p>More than 13 years of experience in financial industry and capital markets</p>
-                </div>
+            <!-- Column 2 - Our Leaders -->
+            <div class="snapshot-column" style="    border-bottom: 1px solid #928f8f;" >
+                <img src="images/marketing_bg.jpg" alt="Our Leaders" class="snapshot-img">
+                <h3>Our Leaders</h3>
+                <p>Meet our experienced and skilled leadership team 
+                    who drive the success of PEML</p>
+                <a href="#" class="btn-link">Our Leaders</a>
             </div>
 
-            <!-- Leader 3 -->
-            <div class="leader-card">
-                <div class="leader-img">
-                    <img src="images/leaderMarketing/Picture3.jpg" alt="Leader 3" class="img-fluid">
-                </div>
-                <div class="leader-info">
-                    <h4>Mohamad Anuar Ebrahim</h4>
-                    <p>Director / CEO</p>
-                    <!-- <div class="leader-icons">
-                        <img src="images/petronas.png" alt="Petronas">
-                    </div> -->
-                    <p>More than 30 years of energy trading experience with one of the region's foremost oil producers</p>
-                </div>
+            <!-- Column 3 - Product -->
+            <div class="snapshot-column" style="    border-bottom: 1px solid #928f8f;">
+                <img src="images/marketing_bg.jpg" alt="Products" class="snapshot-img">
+                <h3>Products</h3>
+                <p>In here, we are committed to providing 
+                    you an exceptional oil and gas trading experience. </p>
+                <a href="#" class="btn-link">Petroleum | Petrochemical</a>
             </div>
         </div>
     </div>
 </section>
+
 
 
 <footer>
