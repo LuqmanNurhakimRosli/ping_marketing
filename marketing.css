@@ -49,25 +49,10 @@ body {
 .navbar-nav .nav-link {
   color: #000000; /* Color of navbar links */
   font-weight: bold; /* Bold text */
-  position: relative; /* For the after pseudo-element */
   padding: 10px 15px; /* Padding for links */
   text-decoration: none; /* Remove underline */
 }
 
-.navbar-nav .nav-link::after {
-  content: ''; /* Empty content for pseudo-element */
-  position: absolute; /* Positioning for effect */
-  width: 0; /* Initial width */
-  height: 2px; /* Height of the underline effect */
-  left: 0; /* Align to left */
-  bottom: 0; /* Align to bottom */
-  background-color: #53b848; /* Color of the underline effect */
-  transition: width 0.3s ease-in-out; /* Smooth transition for effect */
-}
-
-.navbar-nav .nav-link:hover::after {
-  width: 100%; /* Expand underline on hover */
-}
 /* Dropdown Menu Styles */
 .dropdown-menu {
   background-color: #f8f9fa; /* Background color for dropdown */
@@ -81,6 +66,26 @@ body {
 .dropdown-item:hover {
   background-color: #53b848; /* Highlight color on hover */
   color: white; /* Text color on hover */
+}
+
+/* Dropdown Toggle Styles - Adding Arrow */
+.navbar-nav .dropdown-toggle {
+  position: relative; /* Positioning for the arrow */
+  display: inline-flex; /* Use flex for alignment */
+  align-items: center; /* Center items vertically */
+}
+
+/* Dropdown Arrow */
+.navbar-nav .dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.5rem; /* Space between link text and arrow */
+  content: "";
+  width: 0; 
+  height: 0; 
+  border-left: 0.4em solid transparent; /* Arrow triangle */
+  border-right: 0.4em solid transparent; /* Arrow triangle */
+  border-top: 0.4em solid #53b848; /* Arrow color and shape */
+  margin-top: -0.1em; /* Adjust vertical alignment */
 }
 
 
@@ -120,7 +125,85 @@ body {
     width: 100%; /* Full width of the parent container */
   }
   
-  
+  /* Snapshot Section Styles */
+
+#snapshot .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+#snapshot h2 {
+  padding-bottom: 30px;
+
+}
+
+/* Snapshot Section */
+#snapshot {
+  padding: 40px 0 90px 0;
+  background-color: #ffffff;
+}
+
+/* Flexbox Row */
+.snapshot-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Snapshot Column */
+.snapshot-column {
+  flex: 1;
+  max-width: 30%; /* Ensures each column takes up 30% of the row */
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.snapshot-column h3 {
+  color: #4CAF50;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.snapshot-column p {
+  font-size: 18px;
+  color: #555;
+  margin: 15px 0;
+}
+
+.snapshot-column a.btn-link {
+  color: #4CAF50;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.snapshot-column a.btn-link:hover {
+  text-decoration: underline;
+}
+
+/* Snapshot Image */
+.snapshot-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .snapshot-row {
+      flex-direction: column;
+  }
+
+  .snapshot-column {
+      max-width: 100%; /* Full width on smaller screens */
+  }
+}
+
 
   /* *************************************************************8 */
   /* contact style*/
@@ -146,7 +229,7 @@ body {
 
 /* Styles for the Info Section */
 #info {
-    padding: 40px 15px; /* More vertical padding for the info section */
+    padding: 40px 15px ; /* More vertical padding for the info section */
     background-color: #ffffff; /* White background */
 }
 
@@ -206,7 +289,7 @@ body {
     /* General PEML Section Styling */
 #peml {
   background-color: rgb(255, 255, 255);
-  padding: 40px 20px;
+  padding: 120px 20px;
 }
 
 #peml .container {
@@ -307,6 +390,18 @@ body {
     }
 }
 
+/* Initially hide the leader cards */
+.leader-card {
+  opacity: 0;
+  transform: translateY(100px); /* Move the card 100px down */
+  transition: all 0.6s ease; /* Smooth transition */
+}
+
+/* When the card is visible, apply this class */
+.leader-card.show {
+  opacity: 1;
+  transform: translateY(0); /* Move to its normal position */
+}
 
 
 
@@ -427,3 +522,5 @@ footer {
       flex: 0 0 100%;
   }
 }
+
+
