@@ -118,7 +118,7 @@ body {
   }
   
 
-.box {
+  #about .box {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -527,5 +527,8 @@ footer {
       flex: 0 0 100%;
   }
 }
+
+
+
 
 
