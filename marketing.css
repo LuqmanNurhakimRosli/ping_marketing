@@ -30,7 +30,7 @@ body {
 /* Navbar Styles */
 .navbar {
   font-size: 16px; /* Base font size */
-  padding: 15px 25px; /* Padding for the navbar */
+  padding: 8px 25px; /* Padding for the navbar */
   border-bottom: 3px solid #53b848; /* Bottom border to match theme */
   background-color: #f8f9fa; /* Light background color */
   display: flex;
@@ -52,6 +52,11 @@ body {
   padding: 10px 15px; /* Padding for links */
   text-decoration: none; /* Remove underline */
 }
+
+#link-main .nav-link {
+  color: #53b848;
+}
+
 
 /* Dropdown Menu Styles */
 .dropdown-menu {
@@ -140,7 +145,7 @@ body {
 
 /* Snapshot Section */
 #snapshot {
-  padding: 40px 0 90px 0;
+  padding: 60px 0 110px 0;
   background-color: #ffffff;
 }
 
@@ -288,8 +293,8 @@ body {
  /* PEML Styles */
     /* General PEML Section Styling */
 #peml {
+  padding: 60px 0 110px 0;
   background-color: rgb(255, 255, 255);
-  padding: 120px 20px;
 }
 
 #peml .container {
