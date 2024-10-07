@@ -131,7 +131,7 @@ body {
   }
   
   /* Snapshot Section Styles */
-
+/* General Styles for Snapshot Section */
 #snapshot .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -140,7 +140,6 @@ body {
 
 #snapshot h2 {
   padding-bottom: 30px;
-
 }
 
 /* Snapshot Section */
@@ -160,10 +159,10 @@ body {
 /* Snapshot Column */
 .snapshot-column {
   flex: 1;
-  max-width: 30%; /* Ensures each column takes up 30% of the row */
   text-align: center;
   padding: 20px;
   box-sizing: border-box;
+  min-width: 250px; /* Ensures columns don't shrink too small */
 }
 
 .snapshot-column h3 {
@@ -191,12 +190,11 @@ body {
 /* Snapshot Image */
 .snapshot-img {
   width: 100%;
-  height: auto;
+  height: 200px; /* Fixed height for uniform image size */
+  object-fit: cover; /* Ensures the image maintains aspect ratio and covers the container */
   border-radius: 10px;
   margin-bottom: 20px;
 }
-
-
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -206,6 +204,10 @@ body {
 
   .snapshot-column {
       max-width: 100%; /* Full width on smaller screens */
+  }
+
+  .snapshot-img {
+      height: 150px; /* Adjust image height for smaller screens */
   }
 }
 
@@ -477,25 +479,32 @@ border-bottom: none;
   
   /* *************************************************************8 */
 /* Footer Styles */
-/* Footer Styles */
 footer {
-  background-color: #41a336;
-  padding: 100px;
+  background-color: #41a336; /* Your desired background color */
+  color: white;
+  padding: 60px;
   text-align: center;
-  color: #ffffff;
 }
 
 .footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center; /* Centers the sections horizontally */
+  flex-wrap: wrap; /* Ensures responsiveness on smaller screens */
+  gap: 150px; /* Adds space between sections */
+  max-width: 1200px; /* Restrict the width for better centering */
+  margin: 0 auto; /* Centers the entire container */
 }
 
 .footer-section {
-  flex: 0 0 30%;
-  margin-bottom: 20px;
+  flex: 1;
+  min-width: 200px; /* Ensure the sections stay aligned on smaller screens */
+  max-width: 20%;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .footer-section ul {
@@ -503,12 +512,12 @@ footer {
   padding: 0;
 }
 
-.footer-section li {
-  margin-bottom: 10px;
+.footer-section ul li {
+  margin-bottom: 5px;
 }
 
 .footer-section a {
-  color: #faf5f5;
+  color: white;
   text-decoration: none;
 }
 
@@ -518,17 +527,17 @@ footer {
 
 .footer-copyright {
   margin-top: 20px;
-  text-align: center;
 }
 
-/* Responsive layout */
+.footer img {
+  width: 50px; /* Adjust the size of the logo */
+  margin-left: 10px;
+}
+
 @media (max-width: 768px) {
-  .footer-section {
-      flex: 0 0 100%;
+  .footer-container {
+      flex-direction: column;
+      align-items: left;
+      gap: 30px;
   }
 }
-
-
-
-
-
