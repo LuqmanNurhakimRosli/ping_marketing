@@ -130,6 +130,145 @@ body {
     width: 100%; /* Full width of the parent container */
   }
   
+
+  /* ************************************************************* */
+/* vision */
+/* General Section Styling */
+#values {
+  padding: 60px 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+#values h2 {
+  font-size: 32px;
+  color: #2E5730; /* Dark green for the title */
+  margin-bottom: 40px;
+}
+
+/* Values List */
+.values-list {
+  list-style: none; /* Remove default list styles */
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto; /* Center the list */
+  text-align: left; /* Align text to the left for each item */
+}
+
+#values p {
+  max-width: 800px;
+  font-size: 18px;
+  color: #555;
+  line-height: 1.8;
+  text-align: center;  /* Centers the paragraph text */
+  margin: 0 auto 20px auto; /* Center the paragraph block itself */
+}
+
+.values-list li {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.8;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Icon Styling */
+.values-list img {
+  width: 24px;
+  height: 24px;
+  margin-right: 15px; /* Space between the icon and the text */
+}
+
+/* Adjusted Spacing Between Divs */
+#values .section div {
+  margin-bottom: 60px; /* Increases the gap between the two sections */
+}
+
+#values ul {
+  margin-top: 40px; /* Extra spacing if needed for the list */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #values h2 {
+    font-size: 28px;
+  }
+  
+  .values-list {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .values-list li {
+    font-size: 16px;
+  }
+  
+  /* Adjust gap between sections on smaller screens */
+  #values .section div {
+    margin-bottom: 40px; /* Reduces the gap for mobile view */
+  }
+}
+
+  /* *********************************************************** */
+/* about us corporate */
+/* General Section Styling */
+#corporate {
+  padding: 60px 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+#corporate h2 {
+  font-size: 32px;
+  color: #2E5730; /* Dark green for the title */
+  margin-bottom: 40px;
+}
+
+/* Values List */
+.corporate-list {
+  list-style: none; /* Remove default list styles */
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto; /* Center the list */
+  text-align: left; /* Align text to the left for each item */
+}
+
+.corporate-list li {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.8;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Icon Styling */
+.corporate-list img {
+  width: 24px;
+  height: 24px;
+  margin-right: 15px; /* Space between the icon and the text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #corporate h2 {
+    font-size: 28px;
+  }
+  
+  .corporate-list {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .corporate-list li {
+    font-size: 16px;
+  }
+}
+
+
+
+  /* *********************************************************** */
   /* Snapshot Section Styles */
 /* General Styles for Snapshot Section */
 #snapshot .container {
@@ -301,10 +440,11 @@ body {
 }
 
 #peml .container {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 20px;
+  gap: 20px; */
+  max-width: 50%;
 }
 
 /* Individual Container Styling */
