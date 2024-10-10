@@ -680,10 +680,10 @@ footer {
   margin-top: 20px;
 }
 
-.footer img {
-  width: 50px; /* Adjust the size of the logo */
+/* .footer img {
+  width: 50px; 
   margin-left: 10px;
-}
+} */
 
 @media (max-width: 768px) {
   .footer-container {

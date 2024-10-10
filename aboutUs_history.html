@@ -24,6 +24,74 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   
     <style>
+  footer {
+  background-color: #41a336; /* Your desired background color */
+  color: white;
+  padding: 60px;
+  text-align: center;
+}
+
+.footer-containers {
+  display: flex;
+  justify-content: center; /* Centers the sections horizontally */
+  flex-wrap: wrap; /* Ensures responsiveness on smaller screens */
+  gap: 150px; /* Adds space between sections */
+  max-width: 1200px; /* Restrict the width for better centering */
+  margin: 0 auto; /* Centers the entire container */
+}
+
+.footer-sections {
+  flex: 1;
+  min-width: 200px; /* Ensure the sections stay aligned on smaller screens */
+  max-width: 20%;
+}
+
+.footer-sections h3 {
+  color:white;
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.footer-sections ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-sections ul li {
+  margin-bottom: 5px;
+  font-size: 16px;
+  
+}
+
+.footer-sections a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-sections a:hover {
+  text-decoration: underline;
+}
+
+.footer-copyrights {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+/* .footer img {
+  width: 50px; 
+  margin-left: 10px;
+} */
+
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: left;
+      gap: 30px;
+  }
+}
+
+
     </style>
   
   </head>
@@ -335,42 +403,43 @@
 <br><br><br><br>
 <br>
 
-
-
-<footer style="background-color: #41a336; color: white; padding: 60px; text-align: center;">
-  <div class="footer-container" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 150px; max-width: 1200px; margin: 0 auto;">
-    <div class="footer-section" style="flex: 1; min-width: 200px; max-width: 20%;">
-      <h3 style="margin-bottom: 10px; font-size: 25px; font-weight: bold; color: white;">Office Locator</h3>
-      <ul style="list-style: none; padding: 0;">
-        <li style="margin-bottom: 5px;">Ping Energy Marketing Limited,</li>
-        <li style="margin-bottom: 5px;">Office Suite 18-02, Level 18, Ilham Tower, No.8 Jalan Binjai, 50450 Kuala Lumpur</li>
-        <li style="margin-bottom: 5px;">+603 4816 8238</li>
+<footer>
+  <div class="footer-containers"> 
+    <div class="footer-sections"> 
+      <h3>Office Locator</h3>
+      <ul>
+        <li>Ping Energy Marketing Limited,</li>
+        <li>Office Suite 18-02, Level 18, Ilham Tower, No.8 Jalan Binjai, 50450 Kuala Lumpur</li>
+        <li>+603 4816 8238</li>
       </ul>
     </div>
 
-    <div class="footer-section" style="flex: 1; min-width: 200px; max-width: 20%;">
-      <h3 style="margin-bottom: 10px; font-size: 25px; font-weight: bold; color: white;">Quick Links</h3>
-      <ul style="list-style: none; padding: 0;">
-        <li style="margin-bottom: 5px;"><a href="OurLeader.html" style="color: white; text-decoration: none;">Our Leaders</a></li>
-        <li style="margin-bottom: 5px;"><a href="product.html" style="color: white; text-decoration: none;">Our Products</a></li>
-        <li style="margin-bottom: 5px;"><a href="contact.html" style="color: white; text-decoration: none;">Contact Us</a></li>
+    <div class="footer-sections"> 
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="OurLeader.html">Our Leaders</a></li>
+        <li><a href="product.html">Our Products</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </div>
 
-    <div class="footer-section" style="flex: 1; min-width: 200px; max-width: 20%;">
-      <h3 style="margin-bottom: 10px; font-size: 25px; font-weight: bold; color: white;">About Us</h3>
-      <ul style="list-style: none; padding: 0;">
-        <li style="margin-bottom: 5px;"><a href="aboutUs_history.html" style="color: white; text-decoration: none;">History</a></li>
-        <li style="margin-bottom: 5px;"><a href="aboutUs_mission&vission.html" style="color: white; text-decoration: none;">Mission & Vision</a></li>
-        <li style="margin-bottom: 5px;"><a href="aboutUs_corporate.html" style="color: white; text-decoration: none;">Corporate Overview</a></li>
+    <div class="footer-sections"> 
+      <h3>About Us</h3>
+      <ul>
+        <li><a href="aboutUs_history.html">History</a></li>
+        <li><a href="aboutUs_mission&vission.html">Mission & Vision</a></li>
+        <li><a href="aboutUs_corporate.html">Corporate Overview</a></li>
       </ul>
     </div>
+    
+    
   </div>
-
-  <div class="footer-copyright" style="margin-top: 20px;">
-    &copy; Ping Energy Marketing Limited 2024. All rights reserved.
-  </div>
+  <div class="footer-copyrights" >
+      &copy; Ping Energy Marketing Limited 2024. All rights reserved.
+    </div>
 </footer>
+
+
 
 
 
