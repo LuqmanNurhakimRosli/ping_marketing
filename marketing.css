@@ -97,39 +97,55 @@ body {
 
   /* *************************************************************8 */
   /* About Styles */
-#about .container {
+  #about .container {
     max-width: 100%; /* Adjust this to change the container's width */
-    max-height: 40%;
     padding: 10px 10px; /* Adjust padding as needed */
-  }
+}
 
-  #about .image {
+#about .image {
     width: 100%; /* Ensure the image takes full width of the container */
     height: 540px; /* Adjust the height to make the image bigger */
-  }
-  
-  #about .image img {
+    position: relative;
+}
+
+#about .image img {
     display: block;
     margin: 0 auto;
     width: 100%; /* Make image take full width of the container */
     height: 100%; /* Make image take full height of its parent */
     max-width: 100%; /* Ensure image scales with container */
     border-radius: 20px; /* Keep the rounded corners */
-  }
-  
+}
 
-  #about .box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-    color: white; /* White text color */
-    padding: 20px;
-    text-align: center;
-    width: 100%; /* Full width of the parent container */
-  }
-  
+#about .box {
+  position: absolute;
+  top: 50%;
+  left: 0; /* Keep the box aligned to the left */
+  transform: translateY(-50%); /* Vertically center the box */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  color: white; /* White text color */
+  padding: 20px;
+  text-align: center; /* Center the text inside the box */
+  width: 40%; /* Box takes 40% of the image width */
+  height: 100%; /* Box takes the full height of the image */
+  display: flex; /* Make the box a flex container */
+  flex-direction: column; /* Arrange the text in a column */
+  justify-content: center; /* Center the content vertically */
+  border-radius: 10px;
+}
+
+#about .box h3,
+#about .box p {
+text-align: left;
+}
+
+#about .box h3{
+  font-size: 2.2em;
+}
+
+#about .box p {
+  font-size: 1.3em;
+}
 
   /* ************************************************************* */
 /* vision */
