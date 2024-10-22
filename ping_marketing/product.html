@@ -35,12 +35,23 @@
                 height: 2px; /* Set the height of the border */
                 background-color: rgb(255, 255, 255); /* Border color */
             }
-        .production-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr); /* 3 columns */
-            gap: 40px;
-           
-        }
+            .second h2::after {
+                content: ""; /* Required for the pseudo-element */
+                position: absolute; /* Position it relative to the h2 */
+                left: 50%; /* Position it in the middle */
+                transform: translateX(-50%); /* Center it horizontally */
+                bottom: 0; /* Position at the bottom of the heading */
+                width: 10%; /* Set the width of the border to 50% */
+                height: 2px; /* Set the height of the border */
+                background-color: rgb(29, 29, 29); /* Border color */
+            }
+            
+                .production-container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr); /* 3 columns */
+                gap: 40px;
+                padding:0 40px 60px ;
+            }
                 .production-item {
             position: relative; /* Positioning context for the pseudo-element */
             background-color: transparent !important;
@@ -58,6 +69,29 @@
                 height: 2px; /* Set the height of the border */
                 background-color: rgb(255, 255, 255); /* Border color */
             }
+
+            .production-items {
+            position: relative; /* Positioning context for the pseudo-element */
+            background-color: transparent !important;
+            padding: 20px;
+            text-align: justify;
+        }
+            /* Pseudo-element for the bottom border */
+            .production-items::after {
+                content: ""; /* Required for the pseudo-element */
+                position: absolute; /* Position it relative to the parent */
+                left: 50%; /* Position it in the middle */
+                transform: translateX(-90%); /* Center it horizontally */
+                bottom: 0; /* Position at the bottom of the item */
+                width: 50%; /* Set the width of the border to 50% */
+                height: 2px; /* Set the height of the border */
+                background-color: rgb(29, 25, 25); /* Border color */
+            }
+            .production-items img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+        }
         
         .production-item img {
             width: 60px;
@@ -72,6 +106,8 @@
         .production-text {
             font-size: 14px;
             line-height: 1.5;
+            /* width: 85%; */
+
         }
         .production-row {
             display: contents;
@@ -150,106 +186,103 @@
 </section>
 
 <!-- Production Section -->
-<section class="production-section" >
-    <div class="production-section-one" style="background-color: #141414; color: white; padding: 20px;">
-    <h2>Petroleum Products</h2>
-    <div class="production-container">
-        <div class="production-row">
-            <div class="production-item">
-                <img src="oil-barrel-60x60.svg" alt="Crude Oil & Condensate">
-                <div class="production-title">Liquefied Petroleum Gas</div>
-                <div class="production-text">We continue to diversify our production of internationally traded crude oil grades.</div>
+<section class="production-section">
+    <div class="production-section" style="background-color: #141414; color: white;">
+        <h2>Petroleum Products</h2>
+        <div class="production-container">
+            <div class="production-row">
+                <div class="production-item">
+                    <img src="images/lpg-60x60.svg" alt="Liquefied Petroleum Gas">
+                    <div class="production-title">Liquefied Petroleum Gas</div>
+                    <div class="production-text">We supply LPG to industrial, commercial, and residential consumers worldwide.</div>
+                </div>
+                <div class="production-item">
+                    <img src="images/gasoline-60x60.svg" alt="Gasoline">
+                    <div class="production-title">Gasoline</div>
+                    <div class="production-text">Our gasoline production meets global demand for efficient and clean energy sources.</div>
+                </div>
+                <div class="production-item">
+                    <img src="images/diesel-60x60.svg" alt="Diesel">
+                    <div class="production-title">Diesel</div>
+                    <div class="production-text">Diesel from Ping Petroleum is known for its superior quality and clean combustion.</div>
+                </div>
             </div>
-            <div class="production-item">
-                <img src="oil-barrel-60x60.svg" alt="LNG">
-                <div class="production-title">Gasoline</div>
-                <div class="production-text">Aramco Trading established its LNG trading desk in 2018.</div>
+            <div class="production-row">
+                <div class="production-item">
+                    <img src="images/jet-60x60.svg" alt="Jet Fuel">
+                    <div class="production-title">Jet Fuel</div>
+                    <div class="production-text">We provide high-grade jet fuel, ensuring optimal performance for the aviation industry.</div>
+                </div>
+                <div class="production-item">
+                    <img src="images/fuel-oil-60x60.svg" alt="Fuel Oil">
+                    <div class="production-title">Fuel Oil</div>
+                    <div class="production-text">Our fuel oil products meet the needs of both industrial heating and marine transportation.</div>
+                </div>
+                <div class="production-item">
+                    <img src="images/sulphur-60x60.svg" alt="Sulphur">
+                    <div class="production-title">Sulphur</div>
+                    <div class="production-text">Sulphur is produced as a byproduct, supporting global industries with critical raw materials.</div>
+                </div>
             </div>
-            <div class="production-item">
-                <img src="oil-barrel-60x60.svg" alt="LPG">
-                <div class="production-title">Diesel</div>
-                <div class="production-text">Aramco Trading started trading pressurized LPG in 2017.</div>
-            </div>
-        </div>
-        <div class="production-row">
-            <div class="production-item">
-                <img src="oil-barrel-60x60.svg" alt="Naphtha">
-                <div class="production-title">Jet Fuel</div>
-                <div class="production-text">Aramco Trading is one of the world’s largest naphtha traders.</div>
-            </div>
-            <div class="production-item">
-                <img src="oil-barrel-60x60.svg" alt="Diesel">
-                <div class="production-title">Fuel Oil</div>
-                <div class="production-text">Aramco Trading has evolved from the traditional role of producer and refiner.</div>
-            </div>
-            <div class="production-item">
-                <img src="oil-barrel-60x60.svg" alt="Gasoline">
-                <div class="production-title">Sulphur</div>
-                <div class="production-text">Aramco Trading is expanding its global gasoline trading portfolio.</div>
-            </div>
-        </div>
-        <div class="production-row" >
-            <div class="production-item">
-                <img src="oil-barrel-60x60.svg" alt="Naphtha">
-                <div class="production-title">Petroleum Coke</div>
-                <div class="production-text">Aramco Trading is one of the world’s largest naphtha traders.</div>
-            </div>
-            
-        </div>
-        
-    </div>
-</div>
+            <div class="production-row">
+                <div class="production-item">
+                    <img src="oil-barrel-60x60.svg" alt="Petroleum Coke">
+                    <div class="production-title">Petroleum Coke</div>
+                    <div class="production-text">Our petroleum coke is utilized in various industrial applications, including power generation.</div>
 
-
-<div class="production-section-two"  style="background-color: #5f8a86; color: #141414; padding: 20px;" >
-    <h2>Petrochemical Products</h2>
-    <div class="production-container">
-        <div class="production-row">
-            <div class="production-item">
-                <img src="oil-barrel-60x60.svg" alt="Crude Oil & Condensate">
-                <div class="production-title">Methanol</div>
-                <div class="production-text">We continue to diversify our production of internationally traded crude oil grades.</div>
-            </div>
-            <div class="production-item">
-                <img src="oil-barrel-60x60.svg" alt="LNG">
-                <div class="production-title">Methyl Tertiary Butyl Ether</div>
-                <div class="production-text">Aramco Trading established its LNG trading desk in 2018.</div>
-            </div>
-            <div class="production-item">
-                <img src="oil-barrel-60x60.svg" alt="LPG">
-                <div class="production-title">Linear Low-Density Polyethylene</div>
-                <div class="production-text">Aramco Trading started trading pressurized LPG in 2017.</div>
+                </div>
             </div>
         </div>
-        <div class="production-row">
-            <div class="production-item">
-                <img src="oil-barrel-60x60.svg" alt="Naphtha">
-                <div class="production-title">Low-Density Polyethylene</div>
-                <div class="production-text">Aramco Trading is one of the world’s largest naphtha traders.</div>
-            </div>
-            <div class="production-item">
-                <img src="oil-barrel-60x60.svg" alt="Diesel">
-                <div class="production-title">High-Density Polyethylene</div>
-                <div class="production-text">Aramco Trading has evolved from the traditional role of producer and refiner.</div>
-            </div>
-            <div class="production-item">
-                <img src="oil-barrel-60x60.svg" alt="Gasoline">
-                <div class="production-title">Ammonia</div>
-                <div class="production-text">Aramco Trading is expanding its global gasoline trading portfolio.</div>
-            </div>
-        </div>
-        <div class="production-row">
-            <div class="production-item">
-                <img src="oil-barrel-60x60.svg" alt="Naphtha">
-                <div class="production-title">Urea</div>
-                <div class="production-text">Aramco Trading is one of the world’s largest naphtha traders.</div>
-            </div>
-            
-        </div>
-        
     </div>
-</div>
+
+    <div class="production-section" style="background-color: #a8dff8; color: #141414;">
+        <div class="second"><h2>Petrochemical Products</h2></div>
+        <div class="production-container">
+            <div class="production-row">
+                <div class="production-items">
+                    <img src="images/metahnol.png" alt="Methanol">
+                    <div class="production-title">Methanol</div>
+                    <div class="production-text">Methanol is a versatile chemical used in producing plastics, paints, and textiles.</div>
+                </div>
+                <div class="production-items">
+                    <img src="images/methyl.png" alt="Methyl Tertiary Butyl Ether">
+                    <div class="production-title">Methyl Tertiary Butyl Ether</div>
+                    <div class="production-text">MTBE is an important component in fuel blending to enhance combustion and reduce emissions.</div>
+                </div>
+                <div class="production-items">
+                    <img src="images/lldp.png" alt="Linear Low-Density Polyethylene">
+                    <div class="production-title">Linear Low-Density Polyethylene</div>
+                    <div class="production-text">LLDPE is used in a variety of packaging and industrial applications due to its flexibility.</div>
+                </div>
+            </div>
+            <div class="production-row">
+                <div class="production-items">
+                    <img src="images/ldp.png" alt="Low-Density Polyethylene">
+                    <div class="production-title">Low-Density Polyethylene</div>
+                    <div class="production-text">LDPE is widely used in manufacturing plastic bags, containers, and electrical insulation.</div>
+                </div>
+                <div class="production-items">
+                    <img src="images/hdp.png" alt="High-Density Polyethylene">
+                    <div class="production-title">High-Density Polyethylene</div>
+                    <div class="production-text">HDPE is renowned for its strength and durability, used in pipes, bottles, and household goods.</div>
+                </div>
+                <div class="production-items">
+                    <img src="images/ammonia.png" alt="Ammonia">
+                    <div class="production-title">Ammonia</div>
+                    <div class="production-text">Ammonia is a key ingredient in fertilizers, driving agricultural productivity globally.</div>
+                </div>
+            </div>
+            <div class="production-row">
+                <div class="production-items">
+                    <img src="images/urea.png" alt="Urea">
+                    <div class="production-title">Urea</div>
+                    <div class="production-text">Urea is an essential nitrogen fertilizer, supporting crop growth and increasing yields.</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
+
 
 
 
