@@ -1,0 +1,663 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #1a1a1a; /* Dark Text */
+    background-color: #ffffff; /* Ligh */
+  }
+
+  h2 {
+ 
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+  }
+
+
+  html {
+    scroll-behavior: smooth;
+}
+
+  
+  .navbar {
+    font-size: 16px;
+    padding: 25px;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Increase z-index */
+  }
+  
+  .navbar-toggler {
+    border-color: #53b848;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%2859,184,72,1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
+  .navbar-nav .nav-link {
+    color: #53b848;
+  }
+  
+  .section {
+    padding: 30px 0;
+    
+    scroll-margin-top: 80px; /* Adjust this value based on your navbar's height */
+}
+
+  /* *************************************************************8 */
+  /* About Styles */
+  #about .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0; /* Adjust padding as needed */
+  }
+  
+  #about .image img { /* Missing closing curly brace fixed here */
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+  
+  /* *************************************************************8 */
+  /* Glance Styles */
+  #glance {
+    background-color: 78d13d;
+    padding: 50px 0;
+    background-color: #53b848;
+  }
+
+  .glance-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .glance-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.glance-item h3 {
+    margin-top: 6px;
+    color: #333;
+}
+  
+.glance-image {
+    width: auto;
+    height: 30%;
+    border-radius: 8px 8px 0 0;
+}
+
+.glance-item p {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.glance-item ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.glance-item ul li {
+    margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .glance-item {
+        width: 100%;
+    }
+}
+
+  /* *************************************************************8 */
+  /* Structure Section Styles */
+#structure {
+    padding: 50px 0;
+    background-color: rgb(194, 196, 191);
+}
+
+.structure-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.structure-header h1 {
+    font-size: 36px;
+    color: #d22929; /* DNEX color */
+}
+
+.structure-header p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Structure Columns */
+.structure-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.structure-column {
+    width: 30%;
+    text-align: center;
+}
+
+.structure-column h2 {
+    color: #0070c0; /* Use different colors for columns */
+    margin-bottom: 20px;
+}
+
+/* Branches */
+.branch {
+    padding: 10px 0;
+}
+
+.sub-branch {
+    padding-left: 20px;
+}
+
+/* Nodes */
+.node {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.node p {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+}
+
+.node span {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .structure-column {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+  
+  /* *************************************************************8 */
+  /* Board Styles */
+/* General Styles for Board */
+#board {
+  padding: 40px 0;
+  background-color: 78d13d;
+}
+
+#board h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.board-row {
+  display: flex;
+  justify-content: space-around;
+  min-width: 100%;
+}
+
+.board-card {
+  background: #f8caca;
+  padding: 20px;
+  margin: 0 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 30%;
+}
+
+.leader-img img {
+  max-width: 100%;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.board-info h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.board-info p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.slider-btn.prev {
+  left: 10px;
+}
+
+.slider-btn.next {
+  right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .board-card {
+      width: 100%;
+  }
+
+  .board-row {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+
+  /* *************************************************************8 */  /* Global Styles */
+/* Global Styles */
+#global {
+  background-color: rgb(200, 201, 200);
+  padding: 20px 0;
+}
+
+#global .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch; /* Ensure equal height */
+  max-width: 1200px;
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Add padding to the container */
+}
+
+#global h2 {
+  flex-basis: 100%; /* Full width for the main heading */
+  text-align: center;
+  color: white; /* Adjust text color for visibility */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+#global .text-container {
+  flex-basis: 35%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#global .image-container {
+  flex-basis: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#global .image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #global .container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #global .text-container,
+  #global .image-container {
+      flex-basis: 100%;
+  }
+}
+
+  /* **************************************************************/
+/* General Section Styling */
+#snapshot {
+  background-color: #78d13d;
+  padding: 50px;
+}
+
+#snapshot .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto; /* Center the container */
+}
+
+/* Snapshot Container Styling */
+#snapshot .snapshot-container {
+  flex-basis: 30%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Styling */
+#snapshot h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+#snapshot h3 {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+#snapshot p, #snapshot li {
+  color: #555;
+}
+
+#snapshot .key-figures {
+  background-color: #eeeeee;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+/* Image Styling */
+#snapshot .snapshot-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #snapshot .snapshot-container {
+      flex-basis: 100%;
+  }
+}
+
+
+  /* *************************************************************8 */
+ /* PEML Styles */
+    /* General PEML Section Styling */
+#peml {
+  background-color: rgb(186, 187, 183);
+  padding: 40px 20px;
+}
+
+#peml .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Individual Container Styling */
+#peml .peml-container {
+  flex-basis: 48%; /* Both containers will take about half the width */
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading and Text Styling */
+#peml h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+#peml p, #peml li {
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #peml .peml-container {
+      flex-basis: 100%; /* Stacks containers vertically on smaller screens */
+  }
+}
+
+  /* *************************************************************8 */
+/* Leadership Section Styles */
+#leadership {
+    padding: 50px 0;
+    background-color: #78d13d;
+}
+
+.leader-row {
+    display: flex;
+    justify-content: space-between; /* Adds space between columns */
+    flex-wrap: wrap; /* Ensures the layout wraps on smaller screens */
+}
+
+.leader-card {
+    background-color: #fff;
+    border: 2px solid #4caf50;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    width: 32%; /* Each card will take up approximately 32% of the container's width */
+    margin-bottom: 20px; /* Adds space between rows */
+    transition: all 0.3s ease;
+}
+
+.leader-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.leader-img img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.leader-info h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px 0 5px;
+}
+
+.leader-info p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.leader-icons {
+    margin: 10px 0;
+}
+
+.leader-icons img {
+    margin: 0 10px;
+    width: 50px; /* Adjust the size as needed */
+}
+
+/* Responsive Design for Mobile Screens */
+@media (max-width: 768px) {
+    .leader-row {
+        flex-direction: column; /* Stacks the cards on top of each other on mobile */
+    }
+
+    .leader-card {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+  /* *************************************************************8 */
+  /* Register Styles */
+  #register {
+    background-color: rgb(177, 179, 173);
+    padding: 60px 0;
+  }
+  #register .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: center;
+}
+
+/* Individual Container Styling */
+#register .register-container {
+    flex-basis: 48%; /* Both containers will take about half the width */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading and Text Styling */
+#register h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#register p, #register li {
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #register .register-container {
+        flex-basis: 100%; /* Stacks containers vertically on smaller screens */
+    }
+}
+
+
+  /* *************************************************************8 */
+  /* Portfolio Styles */
+  #portfolio {
+    padding: 60px 0;
+    background-color: #96c975;
+}
+
+#portfolio .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#portfolio h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.portfolio-category {
+    margin-bottom: 40px;
+}
+
+.portfolio-category h3 {
+    font-size: 1.8rem;
+    color: #0056b3;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 10px;
+}
+
+.portfolio-category ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.portfolio-category ul li {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 8px 0;
+}
+
+  
+  /* *************************************************************8 */
+/* Footer Styles */
+/* Footer Styles */
+footer {
+  background-color: #41a336;
+  padding: 100px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 0 0 30%;
+  margin-bottom: 20px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  color: #faf5f5;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-copyright {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .footer-section {
+      flex: 0 0 100%;
+  }
+}
