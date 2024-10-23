@@ -260,8 +260,8 @@ text-align: justify;
 
 /* Icon Styling */
 .values-list img {
-  width: 24px; /* Icon width */
-  height: 24px; /* Icon height */
+  width: 34px; /* Icon width */
+  height: 34px; /* Icon height */
   margin-right: 15px; /* Space between the icon and the text */
 }
 
