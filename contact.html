@@ -64,6 +64,7 @@
 
     #contact-section .peml-container p {
       margin-bottom: 10px; /* Space between paragraphs */
+      padding-bottom: 10px;
       color: #555; /* Text color */
       width: 80%;
     }
@@ -86,27 +87,7 @@
     <!-- jQuery and Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        document.querySelectorAll('.navbar a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            });
-        });
-        </script>
-        <script src="slide.js"></script>
-
-        <script>$(document).ready(function() {
-            $('.service-item a').on('click', function(e) {
-                e.preventDefault();
-                var modalId = $(this).attr('href');
-                $(modalId).modal('show');
-            });
-        });
-        </script>
+    
         
         
        

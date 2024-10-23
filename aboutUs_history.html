@@ -24,11 +24,77 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   
     <style>
+  .valuesx {
+  padding: 10px 0;
+  background-color: #ffffff;
+}
+
+.vission-containerx {
+  display: flex; /* Flex layout for content and image side by side */
+  justify-content: space-between; /* Space between the content and image */
+  align-items: center; /* Align content and image vertically center */
+  gap: 40px; /* Space between the two sections */
+  max-width: 1200px; /* Maximum width of the container */
+  margin: 0 auto; /* Center container */
+  padding: 20px 20px 40px; /* Top, sides, and bottom padding */
+  border-bottom: 3px solid #53b848;
+  animation: slide-in 0.9s ease-out; /* Apply the slide-in animation */
+
+}
+
+.vission-contentx {
+  flex: 1; /* Allow content to take up available space */
+  display: block; /* Use block display for normal flow */
+}
+
+.valuesx .vission-contentx h2 {
+  text-align: left ; 
+  font-size: 28px;
+  padding-bottom: 10px;
+}
+
+.valuesx .vission-contentx p {
+  text-align: justify; 
+  padding-right: 20%;
+font-size: 16px;
+  color: #555; /* Color for the text */
+
+}
+
+.vission-imgx {
+  flex: 1; /* Allow image to take up available space */
+  max-width: 500px; /* Maximum width for the image */
+}
+
+.vission-imgx img {
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Keep aspect ratio */
+  border-radius: 25px;
+
+}
+
+.head-history {
+  text-align: center; /* Center the content */
+  font-size: 16px;
+  padding-top: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.head-history h2 {
+  display: inline-block; /* Treat the h2 as an inline block to adjust its size */
+  border-bottom: 2px solid #41a336; /* The border below the text */
+  padding-bottom: 10px; /* Add some spacing between text and border */
+  width: 20%; /* Set the width of the border to 50% of the heading width */
+}
+
+
+
+
   footer {
   background-color: #41a336; /* Your desired background color */
   color: white;
   padding: 60px;
-  text-align: center;
+  text-align: justify;
 }
 
 .footer-containers {
@@ -76,6 +142,7 @@
 .footer-copyrights {
   margin-top: 20px;
   font-size: 16px;
+  text-align: center;
 }
 
 /* .footer img {
@@ -148,18 +215,25 @@
   </div>
 </section>
 
-
-  <div id="values">
-  <h2>ABOUT US</h2>
-  <div class="container" >
-  <P>Ping Energy Marketing Limited focuses on energy commodity trading business,
-     leveraging on existing relationship of DNeX Group in connecting the Supplier and End User. </P>
-    </div>
+<div class="valuesx">
+  <div class="vission-containerx">
+      <div class="vission-contentx" style="  text-align: left !important; ">
+          <h2>ABOUT US</h2>
+         <p> Ping Energy Marketing Limited focuses on energy commodity trading business,
+          leveraging on existing relationship of DNeX Group in connecting the Supplier and End User. </p>
+      </div>
+      <div class="vission-imgx">
+          <img src="images/vission.jpg" alt="vission">
+      </div>
   </div>
-<br><br>
 
+</div>
 
+<div class="head-history">
+  <h2>Company Timeline</h2>
+</div>
 
+<center>
 <section class="cd-h-timeline js-cd-h-timeline margin-bottom-md">
 
   <br><br>
@@ -399,6 +473,7 @@
   </div> <!-- .cd-h-timeline__events -->
   
 </section>
+</center>
 <br>
 <br><br><br><br>
 <br>

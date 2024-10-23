@@ -8,6 +8,7 @@ body {
     background-color: #ffffff; /* Ligh */
   }
 
+  
   h2 {
  
       max-width: 1200px;
@@ -152,7 +153,7 @@ text-align: justify;
 /* vision */
 /* General Section Styling */
 #values {
-  padding: 60px 0;
+  padding: 40px 0;
   background-color: #ffffff;
 }
 
@@ -163,7 +164,7 @@ text-align: justify;
   gap: 40px; /* Space between the two sections */
   max-width: 1200px; /* Maximum width of the container */
   margin: 0 auto; /* Center container */
-  padding: 20px 20px 40px; /* Top, sides, and bottom padding */
+  padding: 0 20px 40px; /* Top, sides, and bottom padding */
   border-bottom: 3px solid #53b848;
   animation: slide-in 0.9s ease-out; /* Apply the slide-in animation */
 
