@@ -215,6 +215,18 @@ text-align: justify;
   animation: slideInRight 0.9s ease-out; /* Apply the slide-in animation */
 
 }
+.values-img {
+  flex: 1; /* Allow image to take up available space */
+  padding-top: 10px;
+  max-width: 600px; /* Maximum width for the image */
+}
+
+.values-img img {
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Keep aspect ratio */
+  border-radius: 25px;
+
+}
 
 .values-content {
   flex: 1; /* Allow content to take up available space */
