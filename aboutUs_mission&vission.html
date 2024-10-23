@@ -13,7 +13,31 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
         <!-- Link to the new CSS file -->
         <link href="marketing.css" rel="stylesheet">
-    
+
+        <style>
+            @keyframes slide-in {
+            0% {
+                transform: translateX(-100%); /* Start off-screen to the left */
+                opacity: 0; /* Fully transparent */
+            }
+            100% {
+                transform: translateX(0); /* End at its normal position */
+                opacity: 1; /* Fully opaque */
+            }
+            }
+
+                        @keyframes slideInRight {
+                0% {
+                    transform: translateX(100%); /* Start off-screen to the right */
+                    opacity: 0; /* Start invisible */
+                }
+                100% {
+                    transform: translateX(0); /* End in original position */
+                    opacity: 1; /* Fully visible */
+                }
+            }
+        </style>
+
     <!-- jQuery and Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -100,24 +124,37 @@
 </section>
 
 <section id="values" class="section">
-    <div>
-    <h2>VISION</h2>
-    <P>We aspire to be a leading marketing and trading company 
-        that is globally recognised for our efficiency in 
-        energy commodity trading, and oil and gas as a whole.</P>
+    <div class="vission-container">
+        <div class="vission-content">
+            <h2>OUR VISION</h2>
+                <p>We aspire to be a leading marketing and trading company 
+                that is globally recognised for our efficiency in 
+                energy commodity trading, and oil and gas as a whole.</p>
+            
+        </div>
+        <div class="vission-img">
+            <img src="images/vission.jpg" alt="vission">
+        </div>
     </div>
+
 <br><br><br>
 
-    <div>
-    <h2>OUR VALUES</h2>
-    <ul class="values-list">
-      <li><img src="images/icon_pp.png" alt="icon"> Add value to global oil trade by delivering exceptional service and performance throughout the supply chain.</li>
-      <li><img src="images/icon_pp.png" alt="icon"> To drive growth within the energy sector strategically.</li>
-      <li><img src="images/icon_pp.png" alt="icon"> Enhance the efficiency and effectiveness of the energy supply chain.</li>
-      <li><img src="images/icon_pp.png" alt="icon"> Ensure reliable and optimized energy solutions.  </li>
-      <li><img src="images/icon_pp.png" alt="icon"> A robust network that supports sustainable energy practices in the dynamic landscape of the energy market.  </li>
-      </ul>
+<div class="values-container">
+    <div class="vission-img">
+        <img src="images/vission.jpg" alt="vission">
     </div>
+    <div class="values-content">
+        <h2>OUR VALUES</h2>
+        <ul class="values-list">
+            <li><img src="images/icon_pp.png" alt="icon"> Add value to global oil trade by delivering exceptional service and performance throughout the supply chain.</li>
+            <li><img src="images/icon_pp.png" alt="icon"> To drive growth within the energy sector strategically.</li>
+            <li><img src="images/icon_pp.png" alt="icon"> Enhance the efficiency and effectiveness of the energy supply chain.</li>
+            <li><img src="images/icon_pp.png" alt="icon"> Ensure reliable and optimized energy solutions.</li>
+            <li><img src="images/icon_pp.png" alt="icon"> A robust network that supports sustainable energy practices in the dynamic landscape of the energy market.</li>
+        </ul>
+    </div>
+</div>
+
   </section>
   
 
