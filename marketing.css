@@ -514,56 +514,6 @@ text-align: justify;
     }
 }
 
-
-
-  /* *************************************************************8 */
- /* PEML Styles */
-    /* General PEML Section Styling */
-#peml {
-  padding: 60px 0 110px 0;
-  background-color: rgb(255, 255, 255);
-}
-
-#peml .container {
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px; */
-  max-width: 50%;
-}
-
-/* Individual Container Styling */
-#peml .peml-container {
-  flex-basis: 48%; /* Both containers will take about half the width */
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-/* Heading and Text Styling */
-#peml h2 {
-  font-size: 1.5em;
-  margin-bottom: 15px;
-  color: #333;
-  font-weight: bold;
-}
-
-#peml p, #peml li {
-  color: #555;
-  font-size: 18px;
-  color: #555;
-  margin: 15px 0;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  #peml .peml-container {
-      flex-basis: 100%; /* Stacks containers vertically on smaller screens */
-  }
-}
-
   /* *************************************************************8 */
 /* Leadership Section Styles */
 #leadership {
