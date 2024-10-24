@@ -547,6 +547,7 @@ text-align: justify;
   font-size: 1.5em;
   margin-bottom: 15px;
   color: #333;
+  font-weight: bold;
 }
 
 #peml p, #peml li {
