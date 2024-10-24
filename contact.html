@@ -134,8 +134,8 @@
       <!-- Image Section -->
       <div class="image" style="position: relative;">
           <div class="box" >
-              <h3>Innovating Energy Solutions</h3>
-              <p>We are committed to efficiency, effectiveness, and excellence in all we do.</p>
+              <h3>Contact Us</h3>
+              <p>Via this page you can find contact details for <br> Ping Energy Marketing Limited. </p>
           </div>            
           <img src="images/GalleryOriSize/mission.jpg" alt="About Ping Petroleum" width="900" height="500" style="display: block;">        
       </div>        
@@ -150,7 +150,6 @@
 
 <section id="contact-section" class="section">
   <div class="container">
-   
     <!-- PEML Section -->
     <div class="peml-container">
       <h1>CONNECT WITH US</h1>
@@ -169,9 +168,9 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.754770003832!2d101.71616077414225!3d3.1592178968161466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37c51cb2f305%3A0xbfd62bc81b62a4a1!2sPing%20Petroleum%20Sdn%20Bhd!5e0!3m2!1sen!2smy!4v1727313564159!5m2!1sen!2smy"></iframe>
       </div>
     </div>
-
   </div>
 </section>
+
 
 
 <!-- MAP LOCATION -->
@@ -228,7 +227,7 @@
       <ul>
         <li><a href="OurLeader.html">Our Leaders</a></li>
         <li><a href="product.html">Our Products</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="#contact-section">Contact Us</a></li>
       </ul>
     </div>
 
@@ -248,7 +247,25 @@
     </div>
 </footer>
 
-
+<script>
+  // Function to handle scrolling with custom speed
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+          // Prevent default anchor click behavior
+          e.preventDefault();
+  
+          // Scroll to the target element with a custom duration
+          const targetElement = document.querySelector(this.getAttribute('href'));
+          if (targetElement) {
+              window.scrollTo({
+                  top: targetElement.offsetTop,
+                  behavior: 'smooth'
+              });
+          }
+      });
+  });
+  </script>
+  
 
 </body>
 </html>

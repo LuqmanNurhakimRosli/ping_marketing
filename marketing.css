@@ -1,4 +1,8 @@
 /* General Styles */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -140,8 +144,9 @@ body {
 text-align: justify;
 }
 
-#about .box h3{
-  font-size: 2.2em;
+#about .container .image .box h3{
+  font-size: 2.4em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #about .box p {
@@ -177,6 +182,7 @@ text-align: justify;
 
 #values .vission-content h2 {
   text-align: left; /* Ensure h2 is aligned to the left */
+  color: #53b848;
 }
 
 #values .vission-content p {
@@ -201,7 +207,7 @@ text-align: justify;
 
 #values h2 {
   font-size: 2em;
-  color: #2E5730; /* Dark green for the title */
+  color: #53b848; /* Dark green for the title */
   margin-bottom: 10px;
 }
 
@@ -399,7 +405,7 @@ text-align: justify;
 }
 
 .snapshot-column p {
-  font-size: 18px;
+  font-size: 1rem;
   color: #555;
   margin: 15px 0;
   text-align: justify;
@@ -562,6 +568,25 @@ text-align: justify;
 #leadership {
     padding: 50px 0;
     background-color: #ffffff;
+}
+
+#leadership .container h2{
+  position: relative; /* Positioning context for the pseudo-element */
+  font-size: 2em; /* Adjust font size as needed */
+  margin-bottom: 30px; /* Space below the heading */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 10px;
+}
+
+#leadership .container h2::after {
+    content: ""; /* Required for the pseudo-element */
+    position: absolute; /* Position it relative to the h2 */
+    left: 50%; /* Position it in the middle */
+    transform: translateX(-50%); /* Center it horizontally */
+    bottom: 0; /* Position at the bottom of the heading */
+    width: 20%; /* Set the width of the border to 50% */
+    height: 2px; /* Set the height of the border */
+    background-color: rgb(19, 18, 18); /* Border color */
 }
 
 .leader-row {
