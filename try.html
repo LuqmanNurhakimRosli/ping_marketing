@@ -4,112 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Page</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: #f4f4f9;
-        }
-        .main-header {
-            color: #6a0dad;
-            font-size: 2.5em;
-            font-weight: bold;
-            margin: 20px 0;
-        }
-        .container {
-            width: 80%;
-            max-width: 1200px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 40px;
-            display: flex;
-            gap: 40px;
-        }
-        .contact-info, .contact-form {
-            width: 50%;
-        }
-        .contact-form {
-            border-left: 1px solid #333;
-            padding-left: 30px;
-        }
-        
-        /* Contact Information Styling */
-        .contact-info h2 {
-            color: #6a0dad;
-            font-size: 1.8em;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-        .contact-info p {
-            margin: 5px 0;
-            color: #333;
-            font-size: 1em;
-            line-height: 1.5;
-        }
-        .contact-info a{
-            text-decoration: none;
-        }
-        .contact-info strong {
-            font-weight: bold;
-            font-size: 1.1em;
-        }
-
-        /* Contact Form Styling */
-        .contact-form h2 {
-            color: #6a0dad;
-            font-size: 1.5em;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-        .contact-form label {
-            display: block;
-            margin: 10px 0 5px;
-            font-weight: bold;
-            color: #333;
-            font-size: 1em;
-        }
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 1em;
-            color: #333;
-        }
-        .contact-form input[type="submit"] {
-            background-color: #6a0dad;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-            padding: 15px;
-            font-size: 1em;
-            font-weight: bold;
-            transition: background-color 0.3s;
-        }
-        .contact-form input[type="submit"]:hover {
-            background-color: #540d87;
-        }
-    </style>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="test.css">
 </head>
 <body>
 
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid"> <!-- Changed to container-fluid -->
+            <a class="navbar-brand" href="index.html">
+                <img src="images/ico/apple-icon-114x114.png" width="60" height="60" alt="logo" class="img-responsive">
+            </a>
+    
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            About Us
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <a class="dropdown-item" href="aboutUs_history.html">About Us</a>
+                            <a class="dropdown-item" href="aboutUs_mission&vission.html">Vision & Values</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="OurLeader.html">Our Leaders</a></li>
+                    <li class="nav-item"><a class="nav-link" href="product.html">Our Products</a></li>
+                    <li id="link-main" class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+</nav>
+    
+
+<!-- Main Header -->
 <h2 class="main-header">Get in Touch</h2>
 
-<div class="container">
+<!-- Section Container -->
+<section class="section-container">
     <!-- Left Contact Information Section -->
     <div class="contact-info">
         <h2>Contact Information</h2>
         <p><strong>Ping Energy Marketing Limited</strong></p>
-        <p>Office Suite 18-02, Level 18, Ilham <br>Tower, No.8 Jalan Binjai, Kuala Lumpur,<br> 50450 Kuala Lumpur, Malaysia Federal <br> Territory of Kuala Lumpur.</p>
-        <p>Email: <a href="mailto:anuar.ebrahim@dnex.com.my">anuar.ebrahim@dnex.com.my</a></p>
+        <p>
+            Office Suite 18-02, Level 18, Ilham Tower, No.8 Jalan Binjai, Kuala Lumpur, 
+            50450 Kuala Lumpur, Malaysia, Federal Territory of Kuala Lumpur.
+        </p>
+                <p>Email: <a href="mailto:anuar.ebrahim@dnex.com.my">anuar.ebrahim@dnex.com.my</a></p>
     </div>
 
     <!-- Right Contact Form Section -->
@@ -128,7 +72,8 @@
             <input type="submit" value="Submit">
         </form>
     </div>
-</div>
+</section>
+
 
 </body>
 </html>
